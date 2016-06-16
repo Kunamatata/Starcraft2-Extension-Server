@@ -1,9 +1,13 @@
+'use strict'
+
 const http         = require('http'),
       fs           = require('fs'),
       path         = require('path'),
       contentTypes = require('./utils/content-types'),
       sysInfo      = require('./utils/sys-info'),
       env          = process.env;
+
+const StarcraftTwitchAPI = require('./workers/twitch-worker.js')
 
 let server = http.createServer(function (req, res) {
   let url = req.url;
@@ -41,3 +45,5 @@ let server = http.createServer(function (req, res) {
 server.listen(env.NODE_PORT || 3000, env.NODE_IP || 'localhost', function () {
   console.log(`Application worker ${process.pid} started...`);
 });
+
+StarcraftTwitchAPI.getTwitchData()
