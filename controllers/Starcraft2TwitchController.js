@@ -4,11 +4,10 @@ var fetch = require('node-fetch')
 var Starcraft = require('../models/starcraft')
 module.exports = class StarcraftTwitchAPI {
 
-  deleteOldDocuments(date) {
-    console.log('deleted')
+  static deleteOldDocuments(date) {
     Starcraft.find({
       createdAt: {
-        $lte: date
+        $lt: date
       }
     }).remove().exec()
   }
@@ -22,13 +21,13 @@ module.exports = class StarcraftTwitchAPI {
         return;
       }
       response.json().then(function(response) {
-        console.log(response.streams.length)
         var lteDate = new Date()
         var starcraft = new Starcraft({
           content: JSON.stringify(response)
         })
         starcraft.save()
-        deleteOldDocuments(lteDate)
+        // Remove the old documents always keep the most recent
+        StarcraftTwitchAPI.deleteOldDocuments(new Date())
       })
     })
   }
