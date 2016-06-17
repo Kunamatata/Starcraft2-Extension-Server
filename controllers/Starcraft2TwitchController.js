@@ -26,7 +26,7 @@ module.exports = class StarcraftTwitchAPI {
           content: JSON.stringify(response)
         })
         starcraft.save()
-        // Remove the old documents always keep the most recent
+          // Remove the old documents always keep the most recent
         StarcraftTwitchAPI.deleteOldDocuments(new Date())
       })
     })
