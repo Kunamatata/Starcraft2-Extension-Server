@@ -11,7 +11,7 @@ var mongoURL = process.env.OPENSHIFT_MONGODB_DB_URL ? process.env.OPENSHIFT_MONG
 // if(process.env.OPENSHIFT_MONGODB_DB_URL)
 //     mongoURI = `${process.env.OPENSHIFT_MONGODB_DB_USERNAME}:${process.env.OPENSHIFT_MONGODB_DB_PASSWORD}@${}`
 if (process.env.OPENSHIFT_MONGODB_DB_URL)
-  mongoose.connect(process.env.OPENSHIFT_MONGODB_DB_URL)
+  mongoose.connect(process.env.OPENSHIFT_MONGODB_DB_URL + db_name)
 else
   mongoURL = 'mongodb://127.0.0.1:27017/' + db_name
 

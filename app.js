@@ -12,7 +12,6 @@ const mongoose = require("mongoose");
 const StarcraftTwitchAPI = require('./controllers/Starcraft2TwitchController')
 
 app.get('/', function(req, res) {
-  console.log(process.env.OPENSHIFT_MONGODB_DB_URL)
   res.send('Twitch API for Starcraft 2!');
 });
 
@@ -25,7 +24,5 @@ app.get('/health', function(req, res) {
 app.listen(env.NODE_PORT || 3000, env.NODE_IP || 'localhost', function() {
   console.log(`Application worker ${process.pid} started...`);
 });
-
-console.log(process.env.OPENSHIFT_MONGODB_DB_URL)
 
 setInterval(StarcraftTwitchAPI.twitchSC2Worker, 20000)
