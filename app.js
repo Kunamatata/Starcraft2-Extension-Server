@@ -11,14 +11,17 @@ const app = express();
 const mongoose = require("mongoose");
 const StarcraftTwitchAPI = require('./controllers/Starcraft2TwitchController')
 
-app.get('/', function(req, res) {
-  res.send('Twitch API for Starcraft 2!');
-});
+
+app.use(express.static('public'));
 
 app.get('/api/sc2/streams', StarcraftTwitchAPI.getTwitchData)
 
 app.get('/health', function(req, res) {
   console.log("hello world")
+})
+
+app.get('/api/status', function(req, res) {
+  res.send(200,'API is working')
 })
 
 app.listen(env.NODE_PORT || 3000, env.NODE_IP || 'localhost', function() {

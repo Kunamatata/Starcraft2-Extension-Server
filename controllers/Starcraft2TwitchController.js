@@ -20,6 +20,7 @@ module.exports = class StarcraftTwitchAPI {
           response.status);
         return;
       }
+      console.log(response.status)
       response.json().then(function(response) {
         var lteDate = new Date()
         var starcraft = new Starcraft({
@@ -40,4 +41,5 @@ module.exports = class StarcraftTwitchAPI {
       res.send(JSON.parse(data.content))
     })
   }
+
 }

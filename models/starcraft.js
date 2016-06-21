@@ -15,8 +15,6 @@ if (process.env.OPENSHIFT_MONGODB_DB_URL)
 else
   mongoURL = 'mongodb://127.0.0.1:27017/' + db_name
 
-
-
 var starcraftSchema = mongoose.Schema({
   content: {
     type: String,
@@ -27,5 +25,4 @@ var starcraftSchema = mongoose.Schema({
 starcraftSchema.plugin(timestamp)
 
 const Starcraft = mongoose.model('Starcraft', starcraftSchema)
-
 module.exports = Starcraft
