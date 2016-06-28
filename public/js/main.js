@@ -16,11 +16,11 @@ function sendRequest() {
 function checkStatus() {
   console.log("ok")
     if (httpRequest.status === 200) {
-        apiIconCheck.style.display = 'block'
+        apiIconCheck.style.display = 'inline-block'
         apiIconError.style.display = 'none'
     } else {
         apiIconCheck.style.display = 'none'
-        apiIconError.style.display = 'block'
+        apiIconError.style.display = 'inline-block'
     }
 }
 sendRequest()
