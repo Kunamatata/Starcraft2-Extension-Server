@@ -4,13 +4,20 @@
 <head>
     <title></title>
     <meta charset="UTF-8">
+    <script src="https://use.fontawesome.com/ab1b0712e1.js"></script>
     <link rel="stylesheet" href="style/style.css">
 </head>
 
 <body>
-    Welcome to the Starcraft 2 Twitch API cache!
-    <div id='api-status'>/api/sc2/streams</div>
-    <script src="main.js"></script>
+    <div id="container">
+        <p class='title'>Welcome to the Starcraft 2 Twitch API cache!</p>
+        <div class="wrapper">
+            <div id='api-status'>/api/sc2/streams<i id='icon-api-check' class="fa fa-check api" aria-hidden="true"></i><i id='icon-api-error' class="fa fa-times api" aria-hidden="true"></i></div>
+        </div>
+    </div>
+
+    <!--Javascript scripts-->
+    <script src="js/main.js"></script>
 </body>
 
 </html>

@@ -2,8 +2,64 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    color: white;
+    font-family: 'Arial', 'sans-serif';
 }
 
-#api-status{
-    background-color:green;
+html,
+body {
+    height: 100%;
+    background-size: cover;
+    background-image: url('../img/bg-1.jpg');
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+
+#container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    z-index: 4;
+    text-align: center;
+    transition: all 1s cubic-bezier(0.16, 0.84, 0.44, 1);
+    opacity: 1;
+}
+
+.title {
+    display: block;
+    margin: 0;
+    background: #3A4352;
+    color: #FEFDD1;
+    letter-spacing: 2px;
+    font-size: 28px;
+    text-transform: uppercase;
+    padding: 10px 10px 4px;
+    font-weight: bold;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.wrapper {
+    background-color: rgba(0, 0, 0, 0.3);
+    min-width: 300px;
+    padding: 25px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#api-status {
+    color: #ffffff;
+}
+
+.fa.fa-check.api {
+    margin-left: 5px;
+    color: #87D37C;
+}
+
+.fa.fa-times.api {
+    margin-left: 5px;
+    color: red;
 }
