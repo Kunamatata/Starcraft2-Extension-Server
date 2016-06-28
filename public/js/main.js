@@ -14,6 +14,7 @@ function sendRequest() {
 }
 
 function checkStatus() {
+  console.log("ok")
     if (httpRequest.status === 200) {
         apiIconCheck.style.display = 'block'
         apiIconError.style.display = 'none'
@@ -22,6 +23,7 @@ function checkStatus() {
         apiIconError.style.display = 'block'
     }
 }
+sendRequest()
 setInterval(sendRequest, 600000)
 
 function changeBGImg() {
