@@ -20,11 +20,11 @@ body {
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate3d(-50%, -50%, 0);
     z-index: 4;
     text-align: center;
     transition: all 1s cubic-bezier(0.16, 0.84, 0.44, 1);
-    opacity: 1;
+    opacity: 0;
+    animation: slide-in-bottom 1s ease-out forwards;
 }
 
 .title {
@@ -62,4 +62,15 @@ body {
 .fa.fa-times.api {
     margin-left: 5px;
     color: red;
+}
+
+@keyframes slide-in-bottom{
+    0%{
+        opacity: 0;
+        transform: translate3d(-50%,0%,0);
+    }
+    100%{
+        opacity: 1;
+        transform: translate3d(-50%,-50%,0);
+    }
 }

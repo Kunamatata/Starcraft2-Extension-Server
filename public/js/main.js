@@ -4,7 +4,7 @@ let sc2ApiStatus = ''
 let apiIconCheck = document.getElementById('icon-api-check')
 let apiIconError = document.getElementById('icon-api-error')
 let body = document.querySelector('body')
-let bgArray = ['bg-1.jpg', 'bg-2.jpg', 'bg-3.jpg']
+let bgArray = ['bg-1.jpg', 'bg-2.jpg', 'bg-3.jpg','bg-4.jpg']
 let httpRequest = new XMLHttpRequest()
 httpRequest.onreadystatechange = checkStatus
 
@@ -26,7 +26,7 @@ sendRequest()
 setInterval(sendRequest, 600000)
 
 function changeBGImg() {
-    var random = Math.floor(Math.random() * 3)
+    var random = Math.floor(Math.random() * 4)
     body.style.backgroundImage = `url(../img/${bgArray[random]})`
 }
 
