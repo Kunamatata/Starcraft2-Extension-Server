@@ -14,7 +14,6 @@ function sendRequest() {
 }
 
 function checkStatus() {
-  console.log("ok")
     if (httpRequest.status === 200) {
         apiIconCheck.style.display = 'inline-block'
         apiIconError.style.display = 'none'
