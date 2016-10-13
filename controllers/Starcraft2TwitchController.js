@@ -2,8 +2,8 @@
 
 var fetch = require('node-fetch')
 var Starcraft = require('../models/starcraft')
-module.exports = class StarcraftTwitchAPI {
 
+module.exports = class StarcraftTwitchAPI {
   static deleteOldDocuments(date) {
     Starcraft.find({
       createdAt: {
@@ -14,7 +14,7 @@ module.exports = class StarcraftTwitchAPI {
 
   static twitchSC2Worker() {
     var starcraft2URL = 'https://api.twitch.tv/kraken/streams?game=StarCraft+II&limit=100';
-    fetch(starcraft2URL).then(function(response) {
+    fetch(starcraft2URL,{'Client-ID':'d70esgd3z7nrisyuznehtqp8l5a1qeu'}).then(function(response) {
       if (response.status !== 200) {
         console.log('Looks like there was a problem. Status Code: ' +
           response.status);
