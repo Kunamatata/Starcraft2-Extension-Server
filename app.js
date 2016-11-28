@@ -21,7 +21,7 @@ app.get('/health', function(req, res) {
 })
 
 app.get('/api/status', function(req, res) {
-  res.send(200,'API is working')
+  res.send(200, 'API is working')
 })
 
 app.listen(env.NODE_PORT || 3000, env.NODE_IP || 'localhost', function() {

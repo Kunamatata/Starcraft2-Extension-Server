@@ -1,5 +1,7 @@
 'use strict'
 
+
+let apiURL = "https://kuna-starcraft2.rhcloud.com/api"
 let sc2ApiStatus = ''
 let apiIconCheck = document.getElementById('icon-api-check')
 let apiIconError = document.getElementById('icon-api-error')
@@ -9,7 +11,7 @@ let httpRequest = new XMLHttpRequest()
 httpRequest.onreadystatechange = checkStatus
 
 function sendRequest() {
-    httpRequest.open('GET', 'http://kuna-starcraft2.rhcloud.com/api/status', true)
+    httpRequest.open('GET', apiURL + '/status', true)
     httpRequest.send(null);
 }
 
