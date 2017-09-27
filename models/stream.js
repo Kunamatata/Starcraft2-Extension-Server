@@ -6,6 +6,8 @@ const timestamp = require('mongoose-timestamp')
 
 var mongoURL = process.env.MONGO_URL_DEV ? process.env.MONGO_URL_DEV : process.env.MONGO_URL
 
+console.log(mongoURL)
+
 mongoose.connect(mongoURL, {
     useMongoClient: true
 })

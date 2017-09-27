@@ -1,8 +1,14 @@
 {
     "name": "starcraft-extension-server",
     "version": "0.0.1",
+    "main": "index.js",
+    "description": "Starcraft extension server with twitch cache",
     "scripts": {
         "start": "node index.js"
+    },
+    "engines": {
+        "node": "*",
+        "npm": "*"
     },
     "author": "Maxime Caly",
     "license": "MIT",
