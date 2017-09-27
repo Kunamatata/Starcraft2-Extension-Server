@@ -17,6 +17,10 @@ app.use(function(req, res, next) {
     next();
 });
 
+app.listen(3000, () => {
+    console.log("Listening on port 3000");
+})
+
 app.use(express.static('public'));
 
 app.get('/api/sc2/streams', StarcraftTwitchAPI.getTwitchData)
@@ -28,9 +32,5 @@ app.get('/health', function(req, res) {
 app.get('/api/status', function(req, res) {
     res.send(200, 'API is working')
 })
-
-app.listen(env.NODE_PORT || 3000, env.NODE_IP || 'localhost', function() {
-    console.log(`Application worker ${process.pid} started...`);
-});
 
 setInterval(StarcraftTwitchAPI.twitchSC2Worker, 20000)

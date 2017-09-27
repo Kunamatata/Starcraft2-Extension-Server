@@ -1,11 +1,11 @@
 'use strict'
 
 var fetch = require('node-fetch')
-var Starcraft = require('../models/starcraft')
+var StreamModel = require('../models/stream')
 
 module.exports = class StarcraftTwitchAPI {
     static deleteOldDocuments(date) {
-        Starcraft.find({
+        StreamModel.find({
             createdAt: {
                 $lt: date
             }
@@ -26,12 +26,11 @@ module.exports = class StarcraftTwitchAPI {
             }
             console.log(response.status)
             response.json().then(function(response) {
-                console.log(response);
                 var lteDate = new Date()
-                var starcraft = new Starcraft({
+                var streams = new StreamModel({
                     content: JSON.stringify(response)
                 })
-                starcraft.save()
+                streams.save()
                     // Remove the old documents always keep the most recent
                 StarcraftTwitchAPI.deleteOldDocuments(new Date())
             })
@@ -40,7 +39,7 @@ module.exports = class StarcraftTwitchAPI {
 
     static getTwitchData(req, res) {
         console.log("getting data from mongo")
-        Starcraft.findOne({}).sort({
+        StreamModel.findOne({}).sort({
             createdAt: -1
         }).exec().then(function(data) {
             res.send(JSON.parse(data.content))
