@@ -7,7 +7,9 @@ mongoose.Promise = global.Promise
 
 var mongoURL = process.env.MONGO_URL ? process.env.MONGO_URL : "mongodb://127.0.0.1:27017/starcraft-db"
 
-mongoose.connect(process.env.MONGO_URL)
+mongoose.connect(process.env.MONGO_URL, {
+    useMongoClient: true
+})
 
 var starcraftSchema = mongoose.Schema({
     content: {
