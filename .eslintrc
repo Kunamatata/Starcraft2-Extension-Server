@@ -1,5 +1,7 @@
-parser: babel-eslint
-rules:
-  quotes:
-    - 1
-    - single
+{
+  "extends": "airbnb-base",
+  "env": {
+    "browser": true,
+    "node": true
+  }
+}

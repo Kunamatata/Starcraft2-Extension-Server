@@ -1,4 +1,4 @@
-version: '3.3'
+version: '2.0'
 services:
   base:
     build: .
@@ -7,4 +7,9 @@ services:
       - "3000:3000"
     environment:
       CONFIG_ENGINE_NAME: "simple-local-fs"
-      MONGO_URL: "mongodb://admin:8IgDVV0eYLyclJ7N@mongodb.starcraft-server-extension.svc:27017/starcraft-twitch-db"
+  links:
+    — mongo
+  mongo:
+    image: mongo
+    ports:
+    — “27017:27017”
