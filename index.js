@@ -1,16 +1,17 @@
-
-
 const express = require('express');
 const path = require('path');
 const favicon = require('serve-favicon');
 const helmet = require('helmet');
-
-const app = express();
+const responseTime = require('response-time');
 
 const StarcraftTwitchAPI = require('./controllers/Starcraft2TwitchController');
 
+const app = express();
+
 app.use(helmet());
-app.use(favicon(path.join(__dirname, 'public/images', 'bg-1.jpg')));
+app.use(responseTime());
+
+app.use(favicon(path.join(__dirname, 'public/img', 'bg-1.jpg')));
 
 app.use((req, res, next) => {
   res.header('Access-Control-Allow-Origin', '*');
@@ -26,12 +27,8 @@ app.use(express.static('public', { maxAge: 30000 }));
 
 app.get('/api/sc2/streams', StarcraftTwitchAPI.getTwitchData);
 
-app.get('/health', (req, res) => {
-  console.log('hello world');
-});
-
 app.get('/api/status', (req, res) => {
-  res.send(200, 'API is working');
+  res.status(200).send('API is working');
 });
 
 setInterval(StarcraftTwitchAPI.twitchSC2Worker, 20000);

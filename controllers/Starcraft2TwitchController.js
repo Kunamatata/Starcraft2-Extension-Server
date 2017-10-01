@@ -1,5 +1,15 @@
 const fetch = require('node-fetch');
 const StreamModel = require('../models/stream');
+const redisClient = require('redis');
+
+const redis = redisClient.createClient(6379, 'localhost');
+redis.on('connect', (data) => {
+  console.log('Redis connection established.');
+});
+
+redis.on('error', (err) => {
+  console.log(err);
+});
 
 module.exports = class StarcraftTwitchAPI {
   static deleteOldDocuments(date) {
@@ -10,7 +20,6 @@ module.exports = class StarcraftTwitchAPI {
       },
     }).remove().exec();
   }
-
   static getFavoriteChannels() {
     // TODO : Get favorite list of channels depending on the route params
   }
@@ -22,12 +31,13 @@ module.exports = class StarcraftTwitchAPI {
         console.log(`Looks like there was a problem. Status Code: ${response.status}`);
         return;
       }
-      console.log(response.status);
       response.json().then((jsonData) => {
+        // console.log('updating database');
         const streams = new StreamModel({
           content: JSON.stringify(jsonData),
         });
         streams.save();
+        redis.set('streams', JSON.stringify(jsonData));
         // Remove the old documents always keep the most recent
         StarcraftTwitchAPI.deleteOldDocuments(new Date());
       });
@@ -35,11 +45,19 @@ module.exports = class StarcraftTwitchAPI {
   }
 
   static getTwitchData(req, res) {
-    console.log('getting data from mongo');
-    StreamModel.findOne({}).sort({
-      createdAt: -1,
-    }).exec().then((data) => {
-      res.send(JSON.parse(data.content));
+    redis.get('streams', (err, result) => {
+      if (result) {
+        // console.log('Getting data from redis');
+        res.send(JSON.parse(result));
+      } else {
+        // console.log('Getting data from mongo');
+        StreamModel.findOne({}).lean().sort({
+          createdAt: -1,
+        }).exec()
+          .then((data) => {
+            res.send(JSON.parse(data.content));
+          });
+      }
     });
   }
 };
