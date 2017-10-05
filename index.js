@@ -35,4 +35,4 @@ app.get('/api/status', (req, res) => {
 
 app.get('/api/sc2/streams', StarcraftTwitchAPI.getTwitchData);
 
-setInterval(StarcraftTwitchAPI.twitchSC2Worker, 1000);
+setInterval(StarcraftTwitchAPI.twitchSC2Worker, 20000);

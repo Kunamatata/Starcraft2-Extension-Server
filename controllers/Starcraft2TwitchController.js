@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 const fetch = require('node-fetch');
 const StreamModel = require('../models/stream');
 const { redis } = require('../config/db');
@@ -17,7 +19,7 @@ module.exports = class StarcraftTwitchAPI {
 
   static twitchSC2Worker() {
     const starcraft2URL = 'https://api.twitch.tv/kraken/streams?game=StarCraft+II&limit=100';
-    fetch(starcraft2URL, { headers: { 'Client-Id': 'd70esgd3z7nrisyuznehtqp8l5a1qeu' } }).then((response) => {
+    fetch(starcraft2URL, { headers: { 'Client-Id': process.env.CLIENT_ID } }).then((response) => {
       if (response.status !== 200) {
         console.log(`Looks like there was a problem. Status Code: ${response.status}`);
         return;
@@ -47,7 +49,7 @@ module.exports = class StarcraftTwitchAPI {
         if (lang) {
           data.streams = data.streams.filter(el => el.channel.broadcaster_language === lang);
         }
-        
+
         return res.send(data);
       }
 
