@@ -1,15 +1,6 @@
 const fetch = require('node-fetch');
 const StreamModel = require('../models/stream');
-const redisClient = require('redis');
-
-const redis = redisClient.createClient(6379, 'localhost');
-redis.on('connect', (data) => {
-  console.log('Redis connection established.');
-});
-
-redis.on('error', (err) => {
-  console.log(err);
-});
+const { redis } = require('../config/db');
 
 module.exports = class StarcraftTwitchAPI {
   static deleteOldDocuments(date) {
@@ -45,19 +36,36 @@ module.exports = class StarcraftTwitchAPI {
   }
 
   static getTwitchData(req, res) {
+    const { lang } = req.query;
+
     redis.get('streams', (err, result) => {
+      let data;
+
       if (result) {
-        // console.log('Getting data from redis');
-        res.send(JSON.parse(result));
-      } else {
-        // console.log('Getting data from mongo');
-        StreamModel.findOne({}).lean().sort({
-          createdAt: -1,
-        }).exec()
-          .then((data) => {
-            res.send(JSON.parse(data.content));
-          });
+        data = JSON.parse(result);
+        
+        if (lang) {
+          data.streams = data.streams.filter(el => el.channel.broadcaster_language === lang);
+        }
+        
+        return res.send(data);
       }
+
+      return StreamModel.findOne({}).lean().sort({
+        createdAt: -1,
+      }).exec()
+        .then((results) => {
+          if (results) {
+            data = JSON.parse(results);
+
+            if (lang) {
+              data.streams = data.streams.filter(el => el.channel.broadcaster_language === lang);
+            }
+
+            return res.send(JSON.parse(results));
+          }
+          return res.send({ msg: 'No data stored' });
+        });
     });
   }
 };

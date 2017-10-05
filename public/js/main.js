@@ -1,4 +1,4 @@
-const apiURL = 'https://kuna-starcraft2.rhcloud.com/api';
+const apiURL = 'http://ec2-54-237-197-248.compute-1.amazonaws.com/api';
 const apiIconCheck = document.getElementById('icon-api-check');
 const apiIconError = document.getElementById('icon-api-error');
 const body = document.querySelector('body');
@@ -6,7 +6,7 @@ const bgArray = ['bg-1.jpg', 'bg-2.jpg', 'bg-3.jpg', 'bg-4.jpg'];
 const httpRequest = new XMLHttpRequest();
 
 function sendRequest() {
-  httpRequest.open('GET', `${apiURL}/status`, true);
+  httpRequest.open('GET', `${apiURL}/sc2/streams`, true);
   httpRequest.send(null);
 }
 
