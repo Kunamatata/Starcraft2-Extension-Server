@@ -7,9 +7,25 @@ const helmet = require('helmet');
 const compression = require('compression');
 const responseTime = require('response-time');
 
+const DatabaseManager = require('./config/DatabaseManager');
 const StarcraftTwitchAPI = require('./controllers/Starcraft2TwitchController');
 
+const databaseManager = new DatabaseManager();
+const starcraftTwitchApi = new StarcraftTwitchAPI();
 const app = express();
+
+databaseManager.connect().then((values) => {
+  console.log('Connections established!')
+}).catch((err) => {
+  console.log(`Oh no, there was an error connecting to the databases! Quick fix it: ${err}`);
+})
+
+starcraftTwitchApi.init({ databaseManager }).then(() =>{
+  starcraftTwitchApi.start();
+}).catch((err) => {
+  console.log(`Oh no, there was an error! Quick fix it: ${err}`);
+  process.exit(1);
+});
 
 app.use(helmet());
 app.use(compression());
@@ -33,6 +49,4 @@ app.get('/api/status', (req, res) => {
   res.status(200).send({ msg: 'API is working' });
 });
 
-app.get('/api/sc2/streams', StarcraftTwitchAPI.getTwitchData);
-
-setInterval(StarcraftTwitchAPI.twitchSC2Worker, 20000);
+app.get('/api/sc2/streams', (req, res) => starcraftTwitchApi.getTwitchData(req, res));

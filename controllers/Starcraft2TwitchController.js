@@ -2,72 +2,62 @@ require('dotenv').config();
 
 const fetch = require('node-fetch');
 const StreamModel = require('../models/stream');
-const { redis } = require('../config/db');
+const { EventEmitter } = require('events');
 
-module.exports = class StarcraftTwitchAPI {
-  static deleteOldDocuments(date) {
-    StreamModel.find({
-      createdAt: {
-        $lt: date,
-
-      },
-    }).remove().exec();
+module.exports = class StarcraftTwitchAPI extends EventEmitter {
+  constructor() {
+    super();
+    this.starcraft2URL = 'https://api.twitch.tv/kraken/streams?game=StarCraft+II&limit=100';
+    this.intervalMS = null;
+    this.poolingMS = 20000;
+    this.databaseManager = null;
   }
-  static getFavoriteChannels() {
+
+  init(opt) {
+    return new Promise((resolve, reject) => {
+      const options = opt || {};
+
+      if (options.databaseManager == null) {
+        return reject(new Error('No database manager was given to initialize'));
+      }
+
+      this.databaseManager = options.databaseManager;
+      return resolve();
+    });
+  }
+
+  start() {
+    this.interval = setInterval(() => {
+      this.twitchSC2Worker();
+    }, this.poolingMS);
+  }
+
+  getFavoriteChannels() {
     // TODO : Get favorite list of channels depending on the route params
   }
 
-  static twitchSC2Worker() {
-    const starcraft2URL = 'https://api.twitch.tv/kraken/streams?game=StarCraft+II&limit=100';
-    fetch(starcraft2URL, { headers: { 'Client-Id': process.env.CLIENT_ID } }).then((response) => {
+  twitchSC2Worker() {
+    fetch(this.starcraft2URL, { headers: { 'Client-Id': process.env.CLIENT_ID } }).then((response) => {
       if (response.status !== 200) {
         console.log(`Looks like there was a problem. Status Code: ${response.status}`);
         return;
       }
       response.json().then((jsonData) => {
-        // console.log('updating database');
-        const streams = new StreamModel({
-          content: JSON.stringify(jsonData),
-        });
-        streams.save();
-        redis.set('streams', JSON.stringify(jsonData));
+        console.log('updating database');
+        this.databaseManager.saveDocument(jsonData);
         // Remove the old documents always keep the most recent
-        StarcraftTwitchAPI.deleteOldDocuments(new Date());
+        this.databaseManager.deleteDocuments(new Date());
+
+        // deep diff on json to see if it changed - websocket idea
+        // this.emit("emitted", {data: jsonData})
       });
     });
   }
 
-  static getTwitchData(req, res) {
+  getTwitchData(req, res) {
     const { lang } = req.query;
-
-    redis.get('streams', (err, result) => {
-      let data;
-
-      if (result) {
-        data = JSON.parse(result);
-        
-        if (lang) {
-          data.streams = data.streams.filter(el => el.channel.broadcaster_language === lang);
-        }
-
-        return res.send(data);
-      }
-
-      return StreamModel.findOne({}).lean().sort({
-        createdAt: -1,
-      }).exec()
-        .then((results) => {
-          if (results) {
-            data = JSON.parse(results);
-
-            if (lang) {
-              data.streams = data.streams.filter(el => el.channel.broadcaster_language === lang);
-            }
-
-            return res.send(JSON.parse(results));
-          }
-          return res.send({ msg: 'No data stored' });
-        });
+    this.databaseManager.getDocuments('streams', lang).then((data) => {
+      res.send(data);
     });
   }
 };
