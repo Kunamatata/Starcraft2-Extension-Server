@@ -1,15 +1,19 @@
-version: '2.0'
+version: '3.0'
 services:
-  base:
+  app:
     build: .
-    image: starcraft-extension
+    image: starcraft-extension-server
     ports:
       - "3000:3000"
     environment:
-      CONFIG_ENGINE_NAME: "simple-local-fs"
-  links:
-    — mongo
-  mongo:
-    image: mongo
+      - NODE_ENV=production
+      - REDIS=redis
+      - MONGO_URL=mongodb://mongodb/starcraft-twitch-db
+  mongodb:
+    image: mongo:latest
     ports:
-    — “27017:27017”
+      - "27017:27017"
+  redis:
+    image: redis:latest
+    ports:
+      - "6379:6379"

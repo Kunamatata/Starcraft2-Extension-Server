@@ -1,7 +1,6 @@
 require('dotenv').config();
 
 const fetch = require('node-fetch');
-const StreamModel = require('../models/stream');
 const { EventEmitter } = require('events');
 
 module.exports = class StarcraftTwitchAPI extends EventEmitter {

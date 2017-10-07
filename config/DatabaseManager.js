@@ -7,14 +7,13 @@ const StreamModel = require('../models/stream');
 class DatabaseManager {
   constructor() {
     this.redis = null;
-    this.mongoURL = process.env.MONGO_URL_DEV ? process.env.MONGO_URL_DEV : process.env.MONGO_URL;
+    this.mongoURL = process.env.MONGO_URL;
     this.streamModel = StreamModel;
-    console.log(this.mongoURL);
   }
 
   connectRedis() {
     return new Promise((resolve, reject) => {
-      this.redis = redisClient.createClient(6379, 'localhost');
+      this.redis = redisClient.createClient(6379, process.env.REDIS);
 
       this.redis.once('connect', (data) => {
         console.log('Redis connection established. :D');
@@ -70,8 +69,8 @@ class DatabaseManager {
         }
 
         this.streamModel.findOne({}).lean().sort({
-          createdAt: -1,
-        }).exec()
+            createdAt: -1,
+          }).exec()
           .then((results) => {
             if (results) {
               data = JSON.parse(results);
