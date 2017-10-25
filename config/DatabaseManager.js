@@ -69,8 +69,8 @@ class DatabaseManager {
         }
 
         this.streamModel.findOne({}).lean().sort({
-            createdAt: -1,
-          }).exec()
+          createdAt: -1,
+        }).exec()
           .then((results) => {
             if (results) {
               data = JSON.parse(results);
