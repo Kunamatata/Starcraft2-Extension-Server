@@ -12,15 +12,15 @@ class DatabaseManager {
   }
 
   connectRedis() {
-    return new Promise((resolve, reject) => {
+    return new Promise((resolve) => {
       this.redis = redisClient.createClient(6379, process.env.REDIS);
 
-      this.redis.once('connect', (data) => {
+      this.redis.once('connect', () => {
         console.log('Redis connection established. :D');
         return resolve();
       });
 
-      this.redis.once('error', err => reject(new Error('err')));
+      this.redis.once('error', err => (new Error(err)));
     });
   }
 
@@ -54,7 +54,7 @@ class DatabaseManager {
   }
 
   getDocuments(name, lang = null) {
-    return new Promise((resolve, reject) => {
+    return new Promise((resolve) => {
       this.redis.get(name, (err, result) => {
         let data;
 
@@ -69,8 +69,8 @@ class DatabaseManager {
         }
 
         this.streamModel.findOne({}).lean().sort({
-            createdAt: -1,
-          }).exec()
+          createdAt: -1,
+        }).exec()
           .then((results) => {
             if (results) {
               data = JSON.parse(results);

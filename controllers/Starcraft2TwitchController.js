@@ -2,6 +2,7 @@ require('dotenv').config();
 
 const fetch = require('node-fetch');
 const { EventEmitter } = require('events');
+const deepDiff = require('deep-diff');
 
 module.exports = class StarcraftTwitchAPI extends EventEmitter {
   constructor() {
@@ -43,12 +44,22 @@ module.exports = class StarcraftTwitchAPI extends EventEmitter {
       }
       response.json().then((jsonData) => {
         console.log('updating database');
-        this.databaseManager.saveDocument(jsonData);
-        // Remove the old documents always keep the most recent
-        this.databaseManager.deleteDocuments(new Date());
+        this.compareData(jsonData).then(() => {
+          this.databaseManager.saveDocument(jsonData);
+          // Remove the old documents always keep the most recent
+          this.databaseManager.deleteDocuments(new Date());
+        });
+      });
+    });
+  }
 
-        // deep diff on json to see if it changed - websocket idea
-        // this.emit("emitted", {data: jsonData})
+  compareData(newData) {
+    return new Promise((resolve) => {
+      this.databaseManager.getDocuments('streams').then((oldData) => {
+        if (deepDiff(newData, oldData)) {
+          this.emit('newData', 'new data available');
+          resolve();
+        }
       });
     });
   }
