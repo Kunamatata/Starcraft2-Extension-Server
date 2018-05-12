@@ -9,19 +9,28 @@ const responseTime = require('response-time');
 
 const DatabaseManager = require('./config/DatabaseManager');
 const StarcraftTwitchAPI = require('./controllers/Starcraft2TwitchController');
+const Sc2UnmaskedController = require('./controllers/Sc2UnmaskedController');
 
 const databaseManager = new DatabaseManager();
 const starcraftTwitchApi = new StarcraftTwitchAPI();
+const sc2UnmaskedController = new Sc2UnmaskedController();
 const app = express();
 
 databaseManager.connect().then((values) => {
-  console.log('Connections established!')
+  console.log('Connections established!');
 }).catch((err) => {
   console.log(`Oh no, there was an error connecting to the databases! Quick fix it: ${err}`);
-})
+});
 
-starcraftTwitchApi.init({ databaseManager }).then(() =>{
+starcraftTwitchApi.init({ databaseManager }).then(() => {
   starcraftTwitchApi.start();
+}).catch((err) => {
+  console.log(`Oh no, there was an error! Quick fix it: ${err}`);
+  process.exit(1);
+});
+
+sc2UnmaskedController.init({ databaseManager }).then(() => {
+
 }).catch((err) => {
   console.log(`Oh no, there was an error! Quick fix it: ${err}`);
   process.exit(1);
@@ -50,3 +59,7 @@ app.get('/api/status', (req, res) => {
 });
 
 app.get('/api/sc2/streams', (req, res) => starcraftTwitchApi.getTwitchData(req, res));
+
+app.get('/api/sc2/players', (req, res) => {
+  sc2UnmaskedController.getUnmaskedData(req, res);
+});
