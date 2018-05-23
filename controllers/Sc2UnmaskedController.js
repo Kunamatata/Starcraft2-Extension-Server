@@ -43,7 +43,7 @@ module.exports = class Sc2UnmaskedController extends EventEmitter {
     });
   }
 
-  fetchUnmaskedData(name) {
+  fetchUnmaskedData(name, server, race) {
     return new Promise((resolve, reject) => {
       const query = {
         q: name,
@@ -72,7 +72,7 @@ module.exports = class Sc2UnmaskedController extends EventEmitter {
           }, []);
 
           this.databaseManager.savePlayerDocument(playersArray);
-          this.databaseManager.getPlayerDocuments(name).then(data => resolve(data));
+          this.databaseManager.getPlayerDocuments(name, server, race).then(data => resolve(data));
         });
       });
     });
@@ -86,8 +86,8 @@ module.exports = class Sc2UnmaskedController extends EventEmitter {
       console.log('database data : ');
       console.log(data);
       if (data.length > 0) {
-        if (now.diff(moment(data[0].updatedAt), 'seconds') > 10) {
-          this.fetchUnmaskedData(name).then((player) => {
+        if (now.diff(moment(data[0].updatedAt), 'seconds') > 60) {
+          this.fetchUnmaskedData(name, server, race).then((player) => {
             res.send(player);
           });
         } else {
@@ -96,7 +96,7 @@ module.exports = class Sc2UnmaskedController extends EventEmitter {
       } else if (data === null || data === undefined || data.length === 0) {
         this.fetchUnmaskedData(name).then((player) => {
           console.log(player);
-          res.send(player);
+          return res.send(player);
         });
       }
     });
