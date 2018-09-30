@@ -3,12 +3,14 @@ require('dotenv').config();
 const redisClient = require('redis');
 const mongoose = require('mongoose');
 const StreamModel = require('../models/stream');
+const PlayerModel = require('../models/player');
 
 class DatabaseManager {
   constructor() {
     this.redis = null;
     this.mongoURL = process.env.MONGO_URL;
     this.streamModel = StreamModel;
+    this.playerModel = PlayerModel;
   }
 
   connectRedis() {
@@ -51,6 +53,47 @@ class DatabaseManager {
         $lt: date,
       },
     }).remove().exec();
+  }
+
+  savePlayerDocument(playerArray) {
+    console.log(playerArray);
+    playerArray.forEach((element) => {
+      const player = new PlayerModel({
+        name: element.name,
+        server: element.server,
+        mmr: element.mmr,
+        race: element.race,
+        wins: element.wins,
+        losses: element.loses,
+      });
+      this.playerModel.findOneAndUpdate({ name: element.name, server: element.server, race: element.race }, element, { new: true, upsert: true }, (data) => {
+      });
+      this.redis.set('players', JSON.stringify(element));
+    });
+  }
+
+  getPlayerDocuments(name, server = null, race = null) {
+    console.log(name, server, race);
+    return new Promise((resolve, reject) => {
+      this.redis.get(name, (err, result) => {
+        let data;
+        if (result) {
+          data = JSON.parse(result);
+          console.log(data);
+          return resolve(data);
+        }
+        console.log("lookup database")
+        this.playerModel.find({ name, race: race || /.*/, server: server || /.*/ }).lean().sort({
+          createdAt: -1,
+        }).exec()
+          .then((results) => {
+            if (results) {
+              return resolve(results);
+            }
+            return resolve({ msg: 'No data stored' });
+          });
+      });
+    });
   }
 
   getDocuments(name, lang = null) {
