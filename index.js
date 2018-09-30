@@ -24,22 +24,23 @@ const Blizzard = require('./helpers/blizzard');
 const Starcraft = require('./helpers/sc2');
 
 const blizzard = new Blizzard();
-blizzard.fetchToken();
+// blizzard.fetchToken('us');
+blizzard.fetchToken('eu');
 
 const app = express();
 
-// databaseManager.connect().then((values) => {
-//   console.log('Connections established!');
-// }).catch((err) => {
-//   console.log(`Oh no, there was an error connecting to the databases! Quick fix it: ${err}`);
-// });
+databaseManager.connect().then((values) => {
+  console.log('Connections established!');
+}).catch((err) => {
+  console.log(`Oh no, there was an error connecting to the databases! Quick fix it: ${err}`);
+});
 
-// starcraftTwitchApi.init({ databaseManager }).then(() => {
-//   starcraftTwitchApi.start();
-// }).catch((err) => {
-//   console.log(`Oh no, there was an error! Quick fix it: ${err}`);
-//   process.exit(1);
-// });
+starcraftTwitchApi.init({ databaseManager }).then(() => {
+  starcraftTwitchApi.start();
+}).catch((err) => {
+  console.log(`Oh no, there was an error! Quick fix it: ${err}`);
+  process.exit(1);
+});
 
 // sc2UnmaskedController.init({ databaseManager }).then(() => {
 
@@ -76,18 +77,19 @@ app.get('/api/sc2/streams', (req, res) => starcraftTwitchApi.getTwitchData(req, 
 //   sc2UnmaskedController.getUnmaskedData(req, res);
 // });
 
-app.get('/api/sc2/players', (req, res) => {
-  Starcraft.getCurrentSeason(blizzard.access_token, { origin: 'us' }).then((response) => {
+app.get('/api/sc2/players/:origin', (req, res) => {
+  const { origin } = req.params;
+  Starcraft.getCurrentSeason(blizzard.access_token, { origin }).then((response) => {
     const season_id = response.data.id;
     Starcraft.ladder(blizzard.access_token, {
       season_id,
       queue_id: 201,
       team_type: 0,
       league_id: 6,
-      origin: 'us',
+      origin,
     }).then((response) => {
       const ladder_id = response.data.tier[0].division[0].ladder_id;
-      Starcraft.getLadder(blizzard.access_token, { origin: 'us', ladder_id }).then((response) => res.send(response.data.team));
+      Starcraft.getLadder(blizzard.access_token, { origin, ladder_id }).then(response => res.send(response.data.team));
     });
   }).catch((e) => {
     blizzard.refreshToken();

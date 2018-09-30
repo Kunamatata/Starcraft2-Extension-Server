@@ -31,10 +31,6 @@ module.exports = class StarcraftTwitchAPI extends EventEmitter {
     }, this.poolingMS);
   }
 
-  getFavoriteChannels() {
-    // TODO : Get favorite list of channels depending on the route params
-  }
-
   twitchSC2Worker() {
     fetch(this.starcraft2URL, { headers: { 'Client-Id': process.env.CLIENT_ID } }).then((response) => {
       if (response.status !== 200) {
