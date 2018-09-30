@@ -8,33 +8,45 @@ const compression = require('compression');
 const responseTime = require('response-time');
 
 const DatabaseManager = require('./config/DatabaseManager');
+const TwitchOauth = require('./helpers/twitch-oauth');
+
+const oauth = new TwitchOauth();
+oauth.init();
+
 const StarcraftTwitchAPI = require('./controllers/Starcraft2TwitchController');
 const Sc2UnmaskedController = require('./controllers/Sc2UnmaskedController');
 
 const databaseManager = new DatabaseManager();
 const starcraftTwitchApi = new StarcraftTwitchAPI();
 const sc2UnmaskedController = new Sc2UnmaskedController();
+
+const Blizzard = require('./helpers/blizzard');
+const Starcraft = require('./helpers/sc2');
+
+const blizzard = new Blizzard();
+blizzard.fetchToken();
+
 const app = express();
 
-databaseManager.connect().then((values) => {
-  console.log('Connections established!');
-}).catch((err) => {
-  console.log(`Oh no, there was an error connecting to the databases! Quick fix it: ${err}`);
-});
+// databaseManager.connect().then((values) => {
+//   console.log('Connections established!');
+// }).catch((err) => {
+//   console.log(`Oh no, there was an error connecting to the databases! Quick fix it: ${err}`);
+// });
 
-starcraftTwitchApi.init({ databaseManager }).then(() => {
-  starcraftTwitchApi.start();
-}).catch((err) => {
-  console.log(`Oh no, there was an error! Quick fix it: ${err}`);
-  process.exit(1);
-});
+// starcraftTwitchApi.init({ databaseManager }).then(() => {
+//   starcraftTwitchApi.start();
+// }).catch((err) => {
+//   console.log(`Oh no, there was an error! Quick fix it: ${err}`);
+//   process.exit(1);
+// });
 
-sc2UnmaskedController.init({ databaseManager }).then(() => {
+// sc2UnmaskedController.init({ databaseManager }).then(() => {
 
-}).catch((err) => {
-  console.log(`Oh no, there was an error! Quick fix it: ${err}`);
-  process.exit(1);
-});
+// }).catch((err) => {
+//   console.log(`Oh no, there was an error! Quick fix it: ${err}`);
+//   process.exit(1);
+// });
 
 app.use(helmet());
 app.use(compression());
@@ -60,6 +72,25 @@ app.get('/api/status', (req, res) => {
 
 app.get('/api/sc2/streams', (req, res) => starcraftTwitchApi.getTwitchData(req, res));
 
+// app.get('/api/sc2/players', (req, res) => {
+//   sc2UnmaskedController.getUnmaskedData(req, res);
+// });
+
 app.get('/api/sc2/players', (req, res) => {
-  sc2UnmaskedController.getUnmaskedData(req, res);
+  Starcraft.getCurrentSeason(blizzard.access_token, { origin: 'us' }).then((response) => {
+    const season_id = response.data.id;
+    Starcraft.ladder(blizzard.access_token, {
+      season_id,
+      queue_id: 201,
+      team_type: 0,
+      league_id: 6,
+      origin: 'us',
+    }).then((response) => {
+      const ladder_id = response.data.tier[0].division[0].ladder_id;
+      Starcraft.getLadder(blizzard.access_token, { origin: 'us', ladder_id }).then((response) => res.send(response.data.team));
+    });
+  }).catch((e) => {
+    blizzard.refreshToken();
+    return res.sendStatus(200);
+  });
 });
