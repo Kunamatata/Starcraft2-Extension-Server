@@ -79,6 +79,14 @@ app.get('/api/sc2/streams', (req, res) => starcraftTwitchApi.getTwitchData(req, 
 
 app.get('/api/sc2/players/:origin', (req, res) => {
   const { origin } = req.params;
+
+  databaseManager.getBlizardPlayerDocuments(origin).then((data) => {
+    console.log('Fetching from redis');
+    if (data) { return res.send(data); }
+  }).catch((e) => {
+    console.log(e);
+  });
+
   Starcraft.getCurrentSeason(blizzard.access_token, { origin }).then((response) => {
     const season_id = response.data.id;
     Starcraft.ladder(blizzard.access_token, {
@@ -89,7 +97,11 @@ app.get('/api/sc2/players/:origin', (req, res) => {
       origin,
     }).then((response) => {
       const ladder_id = response.data.tier[0].division[0].ladder_id;
-      Starcraft.getLadder(blizzard.access_token, { origin, ladder_id }).then(response => res.send(response.data.team));
+      Starcraft.getLadder(blizzard.access_token, { origin, ladder_id })
+        .then((response) => {
+          databaseManager.saveBlizzardPlayerDocument(response.data.team, origin);
+          res.send(response.data.team);
+        });
     });
   }).catch((e) => {
     blizzard.refreshToken();

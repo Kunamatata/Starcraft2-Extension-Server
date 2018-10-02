@@ -56,7 +56,6 @@ class DatabaseManager {
   }
 
   savePlayerDocument(playerArray) {
-    console.log(playerArray);
     playerArray.forEach((element) => {
       const player = new PlayerModel({
         name: element.name,
@@ -66,8 +65,7 @@ class DatabaseManager {
         wins: element.wins,
         losses: element.loses,
       });
-      this.playerModel.findOneAndUpdate({ name: element.name, server: element.server, race: element.race }, element, { new: true, upsert: true }, (data) => {
-      });
+      this.playerModel.findOneAndUpdate({ name: element.name, server: element.server, race: element.race }, element, { new: true, upsert: true }, (data) => {});
       this.redis.set('players', JSON.stringify(element));
     });
   }
@@ -82,7 +80,7 @@ class DatabaseManager {
           console.log(data);
           return resolve(data);
         }
-        console.log("lookup database")
+        console.log('lookup database');
         this.playerModel.find({ name, race: race || /.*/, server: server || /.*/ }).lean().sort({
           createdAt: -1,
         }).exec()
@@ -92,6 +90,43 @@ class DatabaseManager {
             }
             return resolve({ msg: 'No data stored' });
           });
+      });
+    });
+  }
+
+  saveBlizzardPlayerDocument(playerArray, origin) {
+    const players = playerArray.map(player => ({
+      name: player.member[0].legacy_link.name,
+      server: /[uU][sS]/.test(origin) ? 'NA' : 'EU',
+      mmr: player.rating,
+      race: player.member[0].played_race_count[0].race.en_US,
+      wins: player.wins,
+      losses: player.losses,
+    }));
+    players.forEach((player) => {
+      const p = new PlayerModel({
+        name: player.name,
+        server: player.server,
+        race: player.race,
+        mmr: player.mmr,
+        wins: player.wins,
+        losses: player.losses,
+      });
+      this.playerModel.find({ server: origin }).remove().exec();
+      p.save();
+    });
+    this.redis.set(`players-${origin}`, JSON.stringify(players));
+  }
+
+  getBlizardPlayerDocuments(origin) {
+    return new Promise((resolve, reject) => {
+      this.redis.get(`players-${origin}`, (err, result) => {
+        console.log(`player-${origin}`);
+
+        if (result) {
+          return resolve(result);
+        }
+        return reject(err);
       });
     });
   }

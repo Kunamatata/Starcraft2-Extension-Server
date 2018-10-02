@@ -22,7 +22,7 @@ module.exports = {
   },
   getLadder(accessToken, params) {
     const { origin, ladder_id } = params;
-    console.log(`https://${origin}.${ladderEndpoint}/${ladder_id}`)
+    console.log(`https://${origin}.${ladderEndpoint}/${ladder_id}`);
     return axios.get(`https://${origin}.${ladderEndpoint}/${ladder_id}?access_token=${accessToken}`);
-  }
+  },
 };
