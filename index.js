@@ -82,8 +82,8 @@ app.get('/api/sc2/players/:origin', (req, res) => {
 
   databaseManager.getBlizzardPlayerDocuments(origin).then((data) => {
     console.log('Fetching from redis');
-    if (data) { 
-      return res.send(data); 
+    if (data) {
+      return res.send(data);
     }
 
     Starcraft.getCurrentSeason(blizzard.access_token, { origin }).then((response) => {

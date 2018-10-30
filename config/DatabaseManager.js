@@ -95,9 +95,11 @@ class DatabaseManager {
   }
 
   saveBlizzardPlayerDocument(playerArray, origin) {
+    const server = /[uU][sS]/.test(origin) ? 'NA' : 'EU';
+    this.playerModel.find({ server: new RegExp(server, 'i') }).remove().exec();
     const players = playerArray.map(player => ({
+      server,
       name: player.member[0].legacy_link.name,
-      server: /[uU][sS]/.test(origin) ? 'NA' : 'EU',
       mmr: player.rating,
       race: player.member[0].played_race_count[0].race.en_US,
       wins: player.wins,
@@ -112,7 +114,6 @@ class DatabaseManager {
         wins: player.wins,
         losses: player.losses,
       });
-      this.playerModel.find({ server: origin }).remove().exec();
       p.save();
     });
     this.redis.set(`players-${origin}`, JSON.stringify(players));
