@@ -116,17 +116,17 @@ class DatabaseManager {
       p.save();
     });
     this.redis.set(`players-${origin}`, JSON.stringify(players));
+    this.redis.expire(`players-${origin}`, 60);
   }
 
-  getBlizardPlayerDocuments(origin) {
+  getBlizzardPlayerDocuments(origin) {
     return new Promise((resolve, reject) => {
       this.redis.get(`players-${origin}`, (err, result) => {
         console.log(`player-${origin}`);
-
-        if (result) {
-          return resolve(result);
+        if (err) {
+          return reject(err);
         }
-        return reject(err);
+        return resolve(result);
       });
     });
   }
