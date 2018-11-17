@@ -44,7 +44,7 @@ class DatabaseManager {
       content: data,
     });
     streams.save();
-    this.redis.set('streams', data);
+    this.redis.setex('streams', 60, data);
   }
 
   deleteDocuments(date) {
