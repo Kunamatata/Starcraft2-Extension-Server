@@ -53,7 +53,7 @@ module.exports = class StarcraftTwitchAPI extends EventEmitter {
     const { lang } = req.query;
     this.databaseManager.redis.get('streams', (err, result) => {
       if (result) {
-        console.log("returning from redis");
+        console.log('returning from redis');
         return res.send(result);
       }
       return this.databaseManager.getDocuments('streams', lang).then((data) => {

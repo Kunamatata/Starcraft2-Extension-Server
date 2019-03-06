@@ -97,6 +97,7 @@ class DatabaseManager {
   saveBlizzardPlayerDocument(playerArray, origin) {
     const server = /[uU][sS]/.test(origin) ? 'NA' : 'EU';
     this.playerModel.find({ server: new RegExp(server, 'i') }).remove().exec();
+
     const players = playerArray.map(player => ({
       server,
       name: player.member[0].legacy_link.name,
@@ -104,18 +105,16 @@ class DatabaseManager {
       race: player.member[0].played_race_count[0].race.en_US,
       wins: player.wins,
       losses: player.losses,
+      currentRank: player.current_rank,
+      previousRank: player.previousRank,
+      lastPlayedDate: player.last_played_time_stamp * 1000,
     }));
+
     players.forEach((player) => {
-      const p = new PlayerModel({
-        name: player.name,
-        server: player.server,
-        race: player.race,
-        mmr: player.mmr,
-        wins: player.wins,
-        losses: player.losses,
-      });
+      const p = new PlayerModel(player);
       p.save();
     });
+
     this.redis.set(`players-${origin}`, JSON.stringify(players));
     this.redis.expire(`players-${origin}`, 60);
   }

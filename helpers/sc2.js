@@ -1,28 +1,32 @@
 const axios = require('axios');
+const CONSTANTS = require('../libs/blizzard-data');
 
-const currentSeason = 'api.battle.net/data/sc2/season/current';
-const currentLadder = 'api.battle.net/data/sc2/league';
-const ladderEndpoint = 'api.battle.net/data/sc2/ladder';
+const currentSeason = 'api.blizzard.com/sc2/ladder/season';
+const currentLadder = 'api.blizzard.com/data/sc2/league';
+const ladderEndpoint = 'api.blizzard.com/data/sc2/ladder';
+
 module.exports = {
   getCurrentSeason(accessToken, params) {
     const { origin } = params;
-    console.log(`https://${origin}.${currentSeason}?access_token=${accessToken}`);
-    return axios.get(`https://${origin}.${currentSeason}?access_token=${accessToken}`);
+    const regionId = CONSTANTS.regions[origin];
+
+    console.log(`https://${origin}.${currentSeason}/${regionId}?access_token=${accessToken}`);
+    return axios.get(`https://${origin}.${currentSeason}/${regionId}?access_token=${accessToken}`);
   },
   ladder(accessToken, params) {
     const {
-      season_id,
-      queue_id,
-      team_type,
-      league_id,
+      seasonId,
+      queueId,
+      teamType,
+      leagueId,
       origin,
     } = params;
-    console.log(`https://${origin}.${currentLadder}/${season_id}/${queue_id}/${team_type}/${league_id}?access_token=${accessToken}`);
-    return axios.get(`https://${origin}.${currentLadder}/${season_id}/${queue_id}/${team_type}/${league_id}?access_token=${accessToken}`);
+    console.log(`https://${origin}.${currentLadder}/${seasonId}/${queueId}/${teamType}/${leagueId}?access_token=${accessToken}`);
+    return axios.get(`https://${origin}.${currentLadder}/${seasonId}/${queueId}/${teamType}/${leagueId}?access_token=${accessToken}`);
   },
   getLadder(accessToken, params) {
-    const { origin, ladder_id } = params;
-    console.log(`https://${origin}.${ladderEndpoint}/${ladder_id}`);
-    return axios.get(`https://${origin}.${ladderEndpoint}/${ladder_id}?access_token=${accessToken}`);
+    const { origin, ladderId } = params;
+    console.log(`https://${origin}.${ladderEndpoint}/${ladderId}`);
+    return axios.get(`https://${origin}.${ladderEndpoint}/${ladderId}?access_token=${accessToken}`);
   },
 };

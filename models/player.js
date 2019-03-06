@@ -14,7 +14,7 @@ const playerSchema = mongoose.Schema({
   },
   mmr: {
     type: Number,
-    default: '',
+    default: 0,
   },
   wins: {
     type: Number,
@@ -27,6 +27,18 @@ const playerSchema = mongoose.Schema({
   race: {
     type: String,
     default: '',
+  },
+  currentRank: {
+    type: Number,
+    default: 0,
+  },
+  previousRank: {
+    type: Number,
+    default: 0,
+  },
+  lastPlayedDate: {
+    type: Number,
+    default: 0,
   },
 });
 
