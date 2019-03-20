@@ -32,9 +32,7 @@ databaseManager.connect().then((values) => {
   console.log(`Oh no, there was an error connecting to the databases! Quick fix it: ${err}`);
 });
 
-starcraftTwitchApi.init({ databaseManager }).then(() => {
-  starcraftTwitchApi.start();
-}).catch((err) => {
+starcraftTwitchApi.init({ databaseManager }).catch((err) => {
   console.log(`Oh no, there was an error! Quick fix it: ${err}`);
   process.exit(1);
 });

@@ -3,3 +3,4 @@ apps:
     name     : 'APP'
     exec_mode: 'cluster'
     instances: 4
+  - script   : './workers/twitch-starcraft-streams.js'
