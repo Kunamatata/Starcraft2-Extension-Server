@@ -64,13 +64,13 @@ body {
     color: red;
 }
 
-@keyframes slide-in-bottom{
-    0%{
+@keyframes slide-in-bottom {
+    0% {
         opacity: 0;
-        transform: translate3d(-50%,0%,0);
+        transform: translate3d(-50%, 0%, 0);
     }
-    100%{
+    100% {
         opacity: 1;
-        transform: translate3d(-50%,-50%,0);
+        transform: translate3d(-50%, -50%, 0);
     }
 }

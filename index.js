@@ -49,7 +49,8 @@ app.use((req, res, next) => {
   next();
 });
 
-app.use(express.static(path.join(__dirname, 'public'), { maxAge: 30000 }));
+app.use(express.static(path.join(__dirname, 'public'),
+  { maxAge: 60 * 60 * 1000 }));
 
 
 app.listen(3000, () => {
