@@ -122,11 +122,11 @@ class DatabaseManager {
   getBlizzardPlayerDocuments(origin) {
     return new Promise((resolve, reject) => {
       this.redis.get(`players-${origin}`, (err, result) => {
-        console.log(`player-${origin}`);
+        // console.log(`player-${origin}`);
         if (err) {
           return reject(err);
         }
-        return resolve(result);
+        return resolve(JSON.parse(result));
       });
     });
   }
@@ -135,14 +135,13 @@ class DatabaseManager {
     return new Promise((resolve, reject) => {
       this.redis.get(name, (err, result) => {
         let data;
-
         if (result) {
           data = JSON.parse(result);
 
           if (lang) {
             data.streams = data.streams.filter(el => el.channel.broadcaster_language === lang);
+            data._total = data.streams.length;
           }
-
           return resolve(data);
         }
 
@@ -151,10 +150,11 @@ class DatabaseManager {
         }).exec()
           .then((results) => {
             if (results) {
-              data = JSON.parse(results);
+              data = results;
 
               if (lang) {
                 data.streams = data.streams.filter(el => el.channel.broadcaster_language === lang);
+                data._total = data.streams.length;
               }
 
               return resolve(data);
