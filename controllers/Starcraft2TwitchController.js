@@ -42,23 +42,14 @@ module.exports = class StarcraftTwitchAPI extends EventEmitter {
         this.databaseManager.saveDocument(jsonData);
         // Remove the old documents always keep the most recent
         this.databaseManager.deleteDocuments(new Date());
-
-        // deep diff on json to see if it changed - websocket idea
-        // this.emit("emitted", {data: jsonData})
       });
     });
   }
 
   getTwitchData(req, res) {
     const { lang } = req.query;
-    this.databaseManager.redis.get('streams', (err, result) => {
-      if (result) {
-        // console.log('returning from redis');
-        return res.send(result);
-      }
-      return this.databaseManager.getDocuments('streams', lang).then((data) => {
-        res.send(data);
-      });
+    return this.databaseManager.getDocuments('streams', lang).then((data) => {
+      res.json(data);
     });
   }
 };
