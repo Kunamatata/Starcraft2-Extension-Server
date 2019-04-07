@@ -6,9 +6,12 @@ const favicon = require('serve-favicon');
 const helmet = require('helmet');
 const compression = require('compression');
 const responseTime = require('response-time');
+const logger = require('./config/winston');
 
 const DatabaseManager = require('./config/DatabaseManager');
 const TwitchOauth = require('./helpers/twitch-oauth');
+const Blizzard = require('./helpers/blizzard');
+const Starcraft = require('./helpers/sc2');
 
 const oauth = new TwitchOauth();
 oauth.init();
@@ -17,9 +20,6 @@ const StarcraftTwitchAPI = require('./controllers/Starcraft2TwitchController');
 
 const databaseManager = new DatabaseManager();
 const starcraftTwitchApi = new StarcraftTwitchAPI();
-
-const Blizzard = require('./helpers/blizzard');
-const Starcraft = require('./helpers/sc2');
 
 const blizzard = new Blizzard();
 blizzard.fetchToken('eu');
@@ -53,6 +53,10 @@ app.use((req, res, next) => {
 app.use(express.static(path.join(__dirname, 'public'),
   { maxAge: 60 * 60 * 1000 }));
 
+app.use((req, res, next) => {
+  logger.info(req.originalUrl, { ipAddr: req.ip });
+  next();
+});
 
 app.listen(3000, () => {
   console.log('Listening on port 3000');
