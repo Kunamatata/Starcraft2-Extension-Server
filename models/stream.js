@@ -5,7 +5,7 @@ mongoose.Promise = global.Promise;
 
 const streamSchema = mongoose.Schema({
   content: {
-    type: String,
+    type: Object,
     default: '',
   },
 });

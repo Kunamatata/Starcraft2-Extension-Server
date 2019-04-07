@@ -39,12 +39,12 @@ class DatabaseManager {
   }
 
   saveDocument(document) {
-    const data = JSON.stringify(document);
+    const data = document;
     const streams = new StreamModel({
       content: data,
     });
     streams.save();
-    this.redis.setex('streams', 60, data);
+    this.redis.setex('streams', 60, JSON.stringify(data));
   }
 
   deleteDocuments(date) {
@@ -137,7 +137,6 @@ class DatabaseManager {
         let data;
         if (result) {
           data = JSON.parse(result);
-
           if (lang) {
             data.streams = data.streams.filter(el => el.channel.broadcaster_language === lang);
             data._total = data.streams.length;
@@ -145,19 +144,18 @@ class DatabaseManager {
           return resolve(data);
         }
 
-        this.streamModel.findOne({}).lean().sort({
+        this.streamModel.findOne({}).sort({
           createdAt: -1,
-        }).exec()
-          .then((results) => {
-            if (results) {
-              data = results;
-
+        }).lean()
+          .exec()
+          .then((result) => {
+            if (result) {
+              let content = result.content;
               if (lang) {
-                data.streams = data.streams.filter(el => el.channel.broadcaster_language === lang);
-                data._total = data.streams.length;
+                content.streams = content.streams.filter(el => el.channel.broadcaster_language === lang);
+                content._total = content.streams.length;
               }
-
-              return resolve(data);
+              return resolve(content);
             }
             return resolve({ msg: 'No data stored' });
           });
