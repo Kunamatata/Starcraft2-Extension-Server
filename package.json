@@ -7,7 +7,7 @@
     "start": "node index.js"
   },
   "engines": {
-    "node": "6"
+    "node": "11.12.0"
   },
   "author": "Maxime Caly",
   "license": "MIT",
@@ -26,7 +26,8 @@
     "query-string": "^6.3.0",
     "redis": "^2.8.0",
     "response-time": "^2.3.2",
-    "serve-favicon": "^2.5.0"
+    "serve-favicon": "^2.5.0",
+    "winston": "^3.2.1"
   },
   "devDependencies": {
     "eslint": "5.7.0",
