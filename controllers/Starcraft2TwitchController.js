@@ -6,7 +6,7 @@ const { EventEmitter } = require('events');
 module.exports = class StarcraftTwitchAPI extends EventEmitter {
   constructor() {
     super();
-    this.starcraft2URL = 'https://api.twitch.tv/kraken/streams?game=StarCraft+II&limit=100';
+    this.starcraft2URL = 'https://api.twitch.tv/helix/streams?game_id=490422&first=100';
     this.intervalMS = null;
     this.poolingMS = 20000;
     this.databaseManager = null;
@@ -32,9 +32,13 @@ module.exports = class StarcraftTwitchAPI extends EventEmitter {
   }
 
   twitchSC2Worker() {
-    fetch(this.starcraft2URL, { headers: { 'Client-Id': process.env.CLIENT_ID } }).then((response) => {
+    fetch(this.starcraft2URL, {
+      headers: { 'Client-ID': process.env.TWITCH_CLIENT_ID },
+    }).then((response) => {
       if (response.status !== 200) {
-        console.log(`Looks like there was a problem. Status Code: ${response.status}`);
+        console.log(
+          `Looks like there was a problem. Status Code: ${response.status}`,
+        );
         return;
       }
       response.json().then((jsonData) => {
