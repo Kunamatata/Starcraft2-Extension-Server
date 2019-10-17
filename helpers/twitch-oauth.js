@@ -1,6 +1,11 @@
+require('dotenv').config();
 const fetch = require('node-fetch');
 
-const { TWITCH_CLIENT_ID, TWITCH_CLIENT_SECRET, TWITCH_GRANT_TYPE } = process.env;
+const {
+  TWITCH_CLIENT_ID,
+  TWITCH_CLIENT_SECRET,
+  TWITCH_GRANT_TYPE,
+} = process.env;
 
 class TwitchOauth {
   constructor() {
@@ -15,15 +20,17 @@ class TwitchOauth {
 
   init() {
     return new Promise((resolve, reject) => {
-      fetch(this.oauthURL, { method: 'POST' }).then(response => response.json()).then((data) => {
-        if (data == null || data.access_token === null) {
-          reject(Error('oauth failed'));
-        }
-        this.access_token = data.access_token;
-        this.expires_in = data.expires_in;
-        this.authHeader.bearer += this.access_token;
-        resolve();
-      });
+      fetch(this.oauthURL, { method: 'POST' })
+        .then(response => response.json())
+        .then((data) => {
+          if (data == null || data.access_token === null) {
+            return reject(Error('oauth failed'));
+          }
+          this.access_token = data.access_token;
+          this.expires_in = data.expires_in;
+          this.authHeader.bearer += this.access_token;
+          return resolve();
+        });
     });
   }
 }
