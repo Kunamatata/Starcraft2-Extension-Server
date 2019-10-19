@@ -1,0 +1,1679 @@
+-- Logs begin at Thu 2016-11-03 10:16:42 PDT, end at Wed 2018-12-12 19:00:01 PST. --
+Dec 05 18:17:01 raspberrypi CRON[17737]: pam_unix(cron:session): session closed for user root
+Dec 05 19:17:01 raspberrypi CRON[18832]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 05 19:17:01 raspberrypi CRON[18836]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 05 19:17:01 raspberrypi CRON[18832]: pam_unix(cron:session): session closed for user root
+Dec 05 20:17:01 raspberrypi CRON[19922]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 05 20:17:01 raspberrypi CRON[19927]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 05 20:17:01 raspberrypi CRON[19922]: pam_unix(cron:session): session closed for user root
+Dec 05 21:17:01 raspberrypi CRON[21010]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 05 21:17:01 raspberrypi CRON[21014]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 05 21:17:01 raspberrypi CRON[21010]: pam_unix(cron:session): session closed for user root
+Dec 05 22:17:01 raspberrypi CRON[22103]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 05 22:17:01 raspberrypi CRON[22107]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 05 22:17:01 raspberrypi CRON[22103]: pam_unix(cron:session): session closed for user root
+Dec 05 23:17:01 raspberrypi CRON[23196]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 05 23:17:01 raspberrypi CRON[23200]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 05 23:17:01 raspberrypi CRON[23196]: pam_unix(cron:session): session closed for user root
+Dec 06 00:17:01 raspberrypi CRON[24289]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 06 00:17:01 raspberrypi CRON[24293]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 06 00:17:01 raspberrypi CRON[24289]: pam_unix(cron:session): session closed for user root
+Dec 06 01:17:01 raspberrypi CRON[25384]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 06 01:17:01 raspberrypi CRON[25388]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 06 01:17:01 raspberrypi CRON[25384]: pam_unix(cron:session): session closed for user root
+Dec 06 02:17:01 raspberrypi CRON[26473]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 06 02:17:01 raspberrypi CRON[26477]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 06 02:17:01 raspberrypi CRON[26473]: pam_unix(cron:session): session closed for user root
+Dec 06 02:19:10 raspberrypi systemd[1]: Starting Cleanup of Temporary Directories...
+-- Subject: Unit systemd-tmpfiles-clean.service has begun start-up
+-- Defined-By: systemd
+-- Support: https://www.debian.org/support
+-- 
+-- Unit systemd-tmpfiles-clean.service has begun starting up.
+Dec 06 02:19:10 raspberrypi systemd[1]: Started Cleanup of Temporary Directories.
+-- Subject: Unit systemd-tmpfiles-clean.service has finished start-up
+-- Defined-By: systemd
+-- Support: https://www.debian.org/support
+-- 
+-- Unit systemd-tmpfiles-clean.service has finished starting up.
+-- 
+-- The start-up result is done.
+Dec 06 03:05:10 raspberrypi systemd[1]: Starting Daily apt download activities...
+-- Subject: Unit apt-daily.service has begun start-up
+-- Defined-By: systemd
+-- Support: https://www.debian.org/support
+-- 
+-- Unit apt-daily.service has begun starting up.
+Dec 06 03:05:11 raspberrypi systemd[1]: Started Daily apt download activities.
+-- Subject: Unit apt-daily.service has finished start-up
+-- Defined-By: systemd
+-- Support: https://www.debian.org/support
+-- 
+-- Unit apt-daily.service has finished starting up.
+-- 
+-- The start-up result is done.
+Dec 06 03:05:11 raspberrypi systemd[1]: apt-daily.timer: Adding 3h 7min 31.316822s random time.
+Dec 06 03:05:11 raspberrypi systemd[1]: apt-daily.timer: Adding 11h 43min 9.831232s random time.
+Dec 06 03:17:01 raspberrypi CRON[27611]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 06 03:17:01 raspberrypi CRON[27615]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 06 03:17:01 raspberrypi CRON[27611]: pam_unix(cron:session): session closed for user root
+Dec 06 04:17:01 raspberrypi CRON[28698]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 06 04:17:01 raspberrypi CRON[28702]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 06 04:17:01 raspberrypi CRON[28698]: pam_unix(cron:session): session closed for user root
+Dec 06 05:17:01 raspberrypi CRON[29784]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 06 05:17:01 raspberrypi CRON[29788]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 06 05:17:01 raspberrypi CRON[29784]: pam_unix(cron:session): session closed for user root
+Dec 06 06:17:01 raspberrypi CRON[30872]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 06 06:17:01 raspberrypi CRON[30876]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 06 06:17:01 raspberrypi CRON[30872]: pam_unix(cron:session): session closed for user root
+Dec 06 06:23:10 raspberrypi systemd[1]: Starting Daily apt upgrade and clean activities...
+-- Subject: Unit apt-daily-upgrade.service has begun start-up
+-- Defined-By: systemd
+-- Support: https://www.debian.org/support
+-- 
+-- Unit apt-daily-upgrade.service has begun starting up.
+Dec 06 06:23:11 raspberrypi systemd[1]: Started Daily apt upgrade and clean activities.
+-- Subject: Unit apt-daily-upgrade.service has finished start-up
+-- Defined-By: systemd
+-- Support: https://www.debian.org/support
+-- 
+-- Unit apt-daily-upgrade.service has finished starting up.
+-- 
+-- The start-up result is done.
+Dec 06 06:23:11 raspberrypi systemd[1]: apt-daily-upgrade.timer: Adding 49min 39.052659s random time.
+Dec 06 06:23:11 raspberrypi systemd[1]: apt-daily-upgrade.timer: Adding 9min 31.247178s random time.
+Dec 06 06:25:01 raspberrypi CRON[31074]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 06 06:25:01 raspberrypi CRON[31078]: (root) CMD (test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.daily ))
+Dec 06 06:25:02 raspberrypi liblogging-stdlog[311]:  [origin software="rsyslogd" swVersion="8.24.0" x-pid="311" x-info="http://www.rsyslog.com"] rsyslogd was HUPed
+Dec 06 06:25:03 raspberrypi CRON[31074]: pam_unix(cron:session): session closed for user root
+Dec 06 07:17:01 raspberrypi CRON[32115]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 06 07:17:01 raspberrypi CRON[32119]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 06 07:17:01 raspberrypi CRON[32115]: pam_unix(cron:session): session closed for user root
+Dec 06 08:17:01 raspberrypi CRON[818]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 06 08:17:01 raspberrypi CRON[826]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 06 08:17:01 raspberrypi CRON[818]: pam_unix(cron:session): session closed for user root
+Dec 06 09:17:01 raspberrypi CRON[1991]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 06 09:17:01 raspberrypi CRON[1995]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 06 09:17:01 raspberrypi CRON[1991]: pam_unix(cron:session): session closed for user root
+Dec 06 10:17:01 raspberrypi CRON[3076]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 06 10:17:01 raspberrypi CRON[3080]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 06 10:17:01 raspberrypi CRON[3076]: pam_unix(cron:session): session closed for user root
+Dec 06 11:17:01 raspberrypi CRON[4160]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 06 11:17:01 raspberrypi CRON[4164]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 06 11:17:01 raspberrypi CRON[4160]: pam_unix(cron:session): session closed for user root
+Dec 06 12:17:01 raspberrypi CRON[5243]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 06 12:17:01 raspberrypi CRON[5247]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 06 12:17:01 raspberrypi CRON[5243]: pam_unix(cron:session): session closed for user root
+Dec 06 13:17:01 raspberrypi CRON[6324]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 06 13:17:01 raspberrypi CRON[6328]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 06 13:17:01 raspberrypi CRON[6324]: pam_unix(cron:session): session closed for user root
+Dec 06 14:17:01 raspberrypi CRON[7400]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 06 14:17:01 raspberrypi CRON[7404]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 06 14:17:01 raspberrypi CRON[7400]: pam_unix(cron:session): session closed for user root
+Dec 06 15:17:01 raspberrypi CRON[8480]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 06 15:17:01 raspberrypi CRON[8484]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 06 15:17:01 raspberrypi CRON[8480]: pam_unix(cron:session): session closed for user root
+Dec 06 16:17:01 raspberrypi CRON[9554]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 06 16:17:01 raspberrypi CRON[9558]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 06 16:17:01 raspberrypi CRON[9554]: pam_unix(cron:session): session closed for user root
+Dec 06 17:17:01 raspberrypi CRON[10634]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 06 17:17:01 raspberrypi CRON[10638]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 06 17:17:01 raspberrypi CRON[10634]: pam_unix(cron:session): session closed for user root
+Dec 06 17:43:10 raspberrypi systemd[1]: Starting Daily apt download activities...
+-- Subject: Unit apt-daily.service has begun start-up
+-- Defined-By: systemd
+-- Support: https://www.debian.org/support
+-- 
+-- Unit apt-daily.service has begun starting up.
+Dec 06 17:43:11 raspberrypi systemd[1]: Started Daily apt download activities.
+-- Subject: Unit apt-daily.service has finished start-up
+-- Defined-By: systemd
+-- Support: https://www.debian.org/support
+-- 
+-- Unit apt-daily.service has finished starting up.
+-- 
+-- The start-up result is done.
+Dec 06 17:43:11 raspberrypi systemd[1]: apt-daily.timer: Adding 4h 1min 47.403608s random time.
+Dec 06 17:43:11 raspberrypi systemd[1]: apt-daily.timer: Adding 1h 10min 6.162883s random time.
+Dec 06 18:17:01 raspberrypi CRON[11873]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 06 18:17:01 raspberrypi CRON[11877]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 06 18:17:01 raspberrypi CRON[11873]: pam_unix(cron:session): session closed for user root
+Dec 06 19:10:10 raspberrypi systemd[1]: Starting Daily apt download activities...
+-- Subject: Unit apt-daily.service has begun start-up
+-- Defined-By: systemd
+-- Support: https://www.debian.org/support
+-- 
+-- Unit apt-daily.service has begun starting up.
+Dec 06 19:10:11 raspberrypi systemd[1]: Started Daily apt download activities.
+-- Subject: Unit apt-daily.service has finished start-up
+-- Defined-By: systemd
+-- Support: https://www.debian.org/support
+-- 
+-- Unit apt-daily.service has finished starting up.
+-- 
+-- The start-up result is done.
+Dec 06 19:10:11 raspberrypi systemd[1]: apt-daily.timer: Adding 33min 9.284153s random time.
+Dec 06 19:10:11 raspberrypi systemd[1]: apt-daily.timer: Adding 3h 8min 6.493087s random time.
+Dec 06 19:17:01 raspberrypi CRON[12997]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 06 19:17:01 raspberrypi CRON[13001]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 06 19:17:02 raspberrypi CRON[12997]: pam_unix(cron:session): session closed for user root
+Dec 06 20:17:01 raspberrypi CRON[14074]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 06 20:17:01 raspberrypi CRON[14078]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 06 20:17:01 raspberrypi CRON[14074]: pam_unix(cron:session): session closed for user root
+Dec 06 21:17:01 raspberrypi CRON[15143]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 06 21:17:01 raspberrypi CRON[15147]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 06 21:17:01 raspberrypi CRON[15143]: pam_unix(cron:session): session closed for user root
+Dec 06 22:17:01 raspberrypi CRON[16218]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 06 22:17:01 raspberrypi CRON[16222]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 06 22:17:01 raspberrypi CRON[16218]: pam_unix(cron:session): session closed for user root
+Dec 06 23:17:01 raspberrypi CRON[17294]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 06 23:17:01 raspberrypi CRON[17298]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 06 23:17:01 raspberrypi CRON[17294]: pam_unix(cron:session): session closed for user root
+Dec 07 00:17:01 raspberrypi CRON[18363]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 07 00:17:01 raspberrypi CRON[18367]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 07 00:17:01 raspberrypi CRON[18363]: pam_unix(cron:session): session closed for user root
+Dec 07 01:17:01 raspberrypi CRON[19431]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 07 01:17:01 raspberrypi CRON[19435]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 07 01:17:01 raspberrypi CRON[19431]: pam_unix(cron:session): session closed for user root
+Dec 07 02:17:01 raspberrypi CRON[20500]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 07 02:17:01 raspberrypi CRON[20504]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 07 02:17:01 raspberrypi CRON[20500]: pam_unix(cron:session): session closed for user root
+Dec 07 02:20:10 raspberrypi systemd[1]: Starting Cleanup of Temporary Directories...
+-- Subject: Unit systemd-tmpfiles-clean.service has begun start-up
+-- Defined-By: systemd
+-- Support: https://www.debian.org/support
+-- 
+-- Unit systemd-tmpfiles-clean.service has begun starting up.
+Dec 07 02:20:10 raspberrypi systemd[1]: Started Cleanup of Temporary Directories.
+-- Subject: Unit systemd-tmpfiles-clean.service has finished start-up
+-- Defined-By: systemd
+-- Support: https://www.debian.org/support
+-- 
+-- Unit systemd-tmpfiles-clean.service has finished starting up.
+-- 
+-- The start-up result is done.
+Dec 07 03:17:01 raspberrypi CRON[21570]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 07 03:17:01 raspberrypi CRON[21574]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 07 03:17:01 raspberrypi CRON[21570]: pam_unix(cron:session): session closed for user root
+Dec 07 04:17:01 raspberrypi CRON[22634]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 07 04:17:01 raspberrypi CRON[22638]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 07 04:17:01 raspberrypi CRON[22634]: pam_unix(cron:session): session closed for user root
+Dec 07 05:17:01 raspberrypi CRON[23698]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 07 05:17:01 raspberrypi CRON[23702]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 07 05:17:01 raspberrypi CRON[23698]: pam_unix(cron:session): session closed for user root
+Dec 07 06:10:10 raspberrypi systemd[1]: Starting Daily apt upgrade and clean activities...
+-- Subject: Unit apt-daily-upgrade.service has begun start-up
+-- Defined-By: systemd
+-- Support: https://www.debian.org/support
+-- 
+-- Unit apt-daily-upgrade.service has begun starting up.
+Dec 07 06:10:11 raspberrypi systemd[1]: Started Daily apt upgrade and clean activities.
+-- Subject: Unit apt-daily-upgrade.service has finished start-up
+-- Defined-By: systemd
+-- Support: https://www.debian.org/support
+-- 
+-- Unit apt-daily-upgrade.service has finished starting up.
+-- 
+-- The start-up result is done.
+Dec 07 06:10:11 raspberrypi systemd[1]: apt-daily-upgrade.timer: Adding 15min 4.320876s random time.
+Dec 07 06:10:11 raspberrypi systemd[1]: apt-daily-upgrade.timer: Adding 40min 2.085820s random time.
+Dec 07 06:17:01 raspberrypi CRON[24810]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 07 06:17:01 raspberrypi CRON[24814]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 07 06:17:01 raspberrypi CRON[24810]: pam_unix(cron:session): session closed for user root
+Dec 07 06:25:01 raspberrypi CRON[24965]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 07 06:25:01 raspberrypi CRON[24969]: (root) CMD (test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.daily ))
+Dec 07 06:25:02 raspberrypi liblogging-stdlog[311]:  [origin software="rsyslogd" swVersion="8.24.0" x-pid="311" x-info="http://www.rsyslog.com"] rsyslogd was HUPed
+Dec 07 06:25:02 raspberrypi CRON[24965]: pam_unix(cron:session): session closed for user root
+Dec 07 07:17:01 raspberrypi CRON[25984]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 07 07:17:01 raspberrypi CRON[25988]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 07 07:17:01 raspberrypi CRON[25984]: pam_unix(cron:session): session closed for user root
+Dec 07 08:17:01 raspberrypi CRON[27046]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 07 08:17:01 raspberrypi CRON[27050]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 07 08:17:01 raspberrypi CRON[27046]: pam_unix(cron:session): session closed for user root
+Dec 07 09:08:10 raspberrypi systemd[1]: Starting Daily apt download activities...
+-- Subject: Unit apt-daily.service has begun start-up
+-- Defined-By: systemd
+-- Support: https://www.debian.org/support
+-- 
+-- Unit apt-daily.service has begun starting up.
+Dec 07 09:08:11 raspberrypi systemd[1]: Started Daily apt download activities.
+-- Subject: Unit apt-daily.service has finished start-up
+-- Defined-By: systemd
+-- Support: https://www.debian.org/support
+-- 
+-- Unit apt-daily.service has finished starting up.
+-- 
+-- The start-up result is done.
+Dec 07 09:08:11 raspberrypi systemd[1]: apt-daily.timer: Adding 11h 58min 48.948408s random time.
+Dec 07 09:08:11 raspberrypi systemd[1]: apt-daily.timer: Adding 44min 25.135928s random time.
+Dec 07 09:17:01 raspberrypi CRON[28151]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 07 09:17:01 raspberrypi CRON[28155]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 07 09:17:01 raspberrypi CRON[28151]: pam_unix(cron:session): session closed for user root
+Dec 07 10:17:01 raspberrypi CRON[29211]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 07 10:17:01 raspberrypi CRON[29215]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 07 10:17:01 raspberrypi CRON[29211]: pam_unix(cron:session): session closed for user root
+Dec 07 11:17:01 raspberrypi CRON[30270]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 07 11:17:01 raspberrypi CRON[30274]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 07 11:17:01 raspberrypi CRON[30270]: pam_unix(cron:session): session closed for user root
+Dec 07 12:17:01 raspberrypi CRON[31332]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 07 12:17:01 raspberrypi CRON[31336]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 07 12:17:01 raspberrypi CRON[31332]: pam_unix(cron:session): session closed for user root
+Dec 07 13:17:01 raspberrypi CRON[32391]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 07 13:17:01 raspberrypi CRON[32395]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 07 13:17:01 raspberrypi CRON[32391]: pam_unix(cron:session): session closed for user root
+Dec 07 14:17:01 raspberrypi CRON[1124]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 07 14:17:01 raspberrypi CRON[1128]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 07 14:17:01 raspberrypi CRON[1124]: pam_unix(cron:session): session closed for user root
+Dec 07 15:17:01 raspberrypi CRON[2210]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 07 15:17:01 raspberrypi CRON[2214]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 07 15:17:01 raspberrypi CRON[2210]: pam_unix(cron:session): session closed for user root
+Dec 07 16:17:01 raspberrypi CRON[3262]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 07 16:17:01 raspberrypi CRON[3266]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 07 16:17:01 raspberrypi CRON[3262]: pam_unix(cron:session): session closed for user root
+Dec 07 17:17:01 raspberrypi CRON[4309]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 07 17:17:01 raspberrypi CRON[4313]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 07 17:17:01 raspberrypi CRON[4309]: pam_unix(cron:session): session closed for user root
+Dec 07 18:17:01 raspberrypi CRON[5363]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 07 18:17:01 raspberrypi CRON[5367]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 07 18:17:01 raspberrypi CRON[5363]: pam_unix(cron:session): session closed for user root
+Dec 07 18:21:39 raspberrypi sshd[5457]: Did not receive identification string from 185.142.236.35 port 48626
+Dec 07 18:21:40 raspberrypi sshd[5458]: Connection closed by 185.142.236.35 port 49148 [preauth]
+Dec 07 18:21:41 raspberrypi sshd[5461]: Connection closed by 185.142.236.35 port 49866 [preauth]
+Dec 07 18:45:10 raspberrypi systemd[1]: Starting Daily apt download activities...
+-- Subject: Unit apt-daily.service has begun start-up
+-- Defined-By: systemd
+-- Support: https://www.debian.org/support
+-- 
+-- Unit apt-daily.service has begun starting up.
+Dec 07 18:45:11 raspberrypi systemd[1]: Started Daily apt download activities.
+-- Subject: Unit apt-daily.service has finished start-up
+-- Defined-By: systemd
+-- Support: https://www.debian.org/support
+-- 
+-- Unit apt-daily.service has finished starting up.
+-- 
+-- The start-up result is done.
+Dec 07 18:45:11 raspberrypi systemd[1]: apt-daily.timer: Adding 7h 43min 3.109771s random time.
+Dec 07 18:45:11 raspberrypi systemd[1]: apt-daily.timer: Adding 9h 45min 33.125359s random time.
+Dec 07 19:17:01 raspberrypi CRON[6466]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 07 19:17:01 raspberrypi CRON[6470]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 07 19:17:01 raspberrypi CRON[6466]: pam_unix(cron:session): session closed for user root
+Dec 07 20:17:01 raspberrypi CRON[7516]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 07 20:17:01 raspberrypi CRON[7520]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 07 20:17:01 raspberrypi CRON[7516]: pam_unix(cron:session): session closed for user root
+Dec 07 21:17:01 raspberrypi CRON[8562]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 07 21:17:01 raspberrypi CRON[8566]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 07 21:17:01 raspberrypi CRON[8562]: pam_unix(cron:session): session closed for user root
+Dec 07 22:17:01 raspberrypi CRON[9613]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 07 22:17:01 raspberrypi CRON[9617]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 07 22:17:01 raspberrypi CRON[9613]: pam_unix(cron:session): session closed for user root
+Dec 07 23:17:01 raspberrypi CRON[10660]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 07 23:17:01 raspberrypi CRON[10664]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 07 23:17:01 raspberrypi CRON[10660]: pam_unix(cron:session): session closed for user root
+Dec 08 00:17:01 raspberrypi CRON[11822]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 08 00:17:01 raspberrypi CRON[11826]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 08 00:17:02 raspberrypi CRON[11822]: pam_unix(cron:session): session closed for user root
+Dec 08 01:17:01 raspberrypi CRON[12863]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 08 01:17:01 raspberrypi CRON[12867]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 08 01:17:01 raspberrypi CRON[12863]: pam_unix(cron:session): session closed for user root
+Dec 08 02:17:01 raspberrypi CRON[13912]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 08 02:17:01 raspberrypi CRON[13916]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 08 02:17:01 raspberrypi CRON[13912]: pam_unix(cron:session): session closed for user root
+Dec 08 02:21:10 raspberrypi systemd[1]: Starting Cleanup of Temporary Directories...
+-- Subject: Unit systemd-tmpfiles-clean.service has begun start-up
+-- Defined-By: systemd
+-- Support: https://www.debian.org/support
+-- 
+-- Unit systemd-tmpfiles-clean.service has begun starting up.
+Dec 08 02:21:10 raspberrypi systemd[1]: Started Cleanup of Temporary Directories.
+-- Subject: Unit systemd-tmpfiles-clean.service has finished start-up
+-- Defined-By: systemd
+-- Support: https://www.debian.org/support
+-- 
+-- Unit systemd-tmpfiles-clean.service has finished starting up.
+-- 
+-- The start-up result is done.
+Dec 08 03:17:01 raspberrypi CRON[14954]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 08 03:17:01 raspberrypi CRON[14958]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 08 03:17:01 raspberrypi CRON[14954]: pam_unix(cron:session): session closed for user root
+Dec 08 04:17:01 raspberrypi CRON[15998]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 08 04:17:01 raspberrypi CRON[16002]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 08 04:17:01 raspberrypi CRON[15998]: pam_unix(cron:session): session closed for user root
+Dec 08 05:17:01 raspberrypi CRON[17046]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 08 05:17:01 raspberrypi CRON[17050]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 08 05:17:01 raspberrypi CRON[17046]: pam_unix(cron:session): session closed for user root
+Dec 08 06:17:01 raspberrypi CRON[18089]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 08 06:17:01 raspberrypi CRON[18093]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 08 06:17:01 raspberrypi CRON[18089]: pam_unix(cron:session): session closed for user root
+Dec 08 06:25:01 raspberrypi CRON[18242]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 08 06:25:01 raspberrypi CRON[18246]: (root) CMD (test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.daily ))
+Dec 08 06:25:02 raspberrypi liblogging-stdlog[311]:  [origin software="rsyslogd" swVersion="8.24.0" x-pid="311" x-info="http://www.rsyslog.com"] rsyslogd was HUPed
+Dec 08 06:25:02 raspberrypi CRON[18242]: pam_unix(cron:session): session closed for user root
+Dec 08 06:40:10 raspberrypi systemd[1]: Starting Daily apt upgrade and clean activities...
+-- Subject: Unit apt-daily-upgrade.service has begun start-up
+-- Defined-By: systemd
+-- Support: https://www.debian.org/support
+-- 
+-- Unit apt-daily-upgrade.service has begun starting up.
+Dec 08 06:40:11 raspberrypi systemd[1]: Started Daily apt upgrade and clean activities.
+-- Subject: Unit apt-daily-upgrade.service has finished start-up
+-- Defined-By: systemd
+-- Support: https://www.debian.org/support
+-- 
+-- Unit apt-daily-upgrade.service has finished starting up.
+-- 
+-- The start-up result is done.
+Dec 08 06:40:11 raspberrypi systemd[1]: apt-daily-upgrade.timer: Adding 46min 26.368690s random time.
+Dec 08 06:40:11 raspberrypi systemd[1]: apt-daily-upgrade.timer: Adding 4min 6.232229s random time.
+Dec 08 07:17:01 raspberrypi CRON[19293]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 08 07:17:01 raspberrypi CRON[19297]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 08 07:17:01 raspberrypi CRON[19293]: pam_unix(cron:session): session closed for user root
+Dec 08 08:17:01 raspberrypi CRON[20333]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 08 08:17:01 raspberrypi CRON[20337]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 08 08:17:01 raspberrypi CRON[20333]: pam_unix(cron:session): session closed for user root
+Dec 08 09:17:01 raspberrypi CRON[21374]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 08 09:17:01 raspberrypi CRON[21378]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 08 09:17:01 raspberrypi CRON[21374]: pam_unix(cron:session): session closed for user root
+Dec 08 10:17:01 raspberrypi CRON[22412]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 08 10:17:01 raspberrypi CRON[22416]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 08 10:17:01 raspberrypi CRON[22412]: pam_unix(cron:session): session closed for user root
+Dec 08 11:17:01 raspberrypi CRON[23450]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 08 11:17:01 raspberrypi CRON[23454]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 08 11:17:01 raspberrypi CRON[23450]: pam_unix(cron:session): session closed for user root
+Dec 08 12:17:01 raspberrypi CRON[24490]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 08 12:17:02 raspberrypi CRON[24494]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 08 12:17:02 raspberrypi CRON[24490]: pam_unix(cron:session): session closed for user root
+Dec 08 13:17:01 raspberrypi CRON[25526]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 08 13:17:01 raspberrypi CRON[25530]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 08 13:17:01 raspberrypi CRON[25526]: pam_unix(cron:session): session closed for user root
+Dec 08 14:17:01 raspberrypi CRON[26561]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 08 14:17:01 raspberrypi CRON[26565]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 08 14:17:01 raspberrypi CRON[26561]: pam_unix(cron:session): session closed for user root
+Dec 08 15:17:01 raspberrypi CRON[27596]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 08 15:17:01 raspberrypi CRON[27600]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 08 15:17:01 raspberrypi CRON[27596]: pam_unix(cron:session): session closed for user root
+Dec 08 15:46:10 raspberrypi systemd[1]: Starting Daily apt download activities...
+-- Subject: Unit apt-daily.service has begun start-up
+-- Defined-By: systemd
+-- Support: https://www.debian.org/support
+-- 
+-- Unit apt-daily.service has begun starting up.
+Dec 08 15:46:11 raspberrypi systemd[1]: Started Daily apt download activities.
+-- Subject: Unit apt-daily.service has finished start-up
+-- Defined-By: systemd
+-- Support: https://www.debian.org/support
+-- 
+-- Unit apt-daily.service has finished starting up.
+-- 
+-- The start-up result is done.
+Dec 08 15:46:11 raspberrypi systemd[1]: apt-daily.timer: Adding 10h 15min 33.597388s random time.
+Dec 08 15:46:11 raspberrypi systemd[1]: apt-daily.timer: Adding 7h 56min 1.320649s random time.
+Dec 08 16:17:01 raspberrypi CRON[28676]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 08 16:17:01 raspberrypi CRON[28680]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 08 16:17:01 raspberrypi CRON[28676]: pam_unix(cron:session): session closed for user root
+Dec 08 17:17:01 raspberrypi CRON[29710]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 08 17:17:01 raspberrypi CRON[29714]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 08 17:17:01 raspberrypi CRON[29710]: pam_unix(cron:session): session closed for user root
+Dec 08 18:17:01 raspberrypi CRON[30736]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 08 18:17:01 raspberrypi CRON[30740]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 08 18:17:01 raspberrypi CRON[30736]: pam_unix(cron:session): session closed for user root
+Dec 08 19:17:01 raspberrypi CRON[31770]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 08 19:17:01 raspberrypi CRON[31774]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 08 19:17:01 raspberrypi CRON[31770]: pam_unix(cron:session): session closed for user root
+Dec 08 20:17:01 raspberrypi CRON[342]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 08 20:17:01 raspberrypi CRON[346]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 08 20:17:01 raspberrypi CRON[342]: pam_unix(cron:session): session closed for user root
+Dec 08 21:17:01 raspberrypi CRON[1531]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 08 21:17:01 raspberrypi CRON[1535]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 08 21:17:01 raspberrypi CRON[1531]: pam_unix(cron:session): session closed for user root
+Dec 08 22:17:01 raspberrypi CRON[2567]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 08 22:17:01 raspberrypi CRON[2571]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 08 22:17:01 raspberrypi CRON[2567]: pam_unix(cron:session): session closed for user root
+Dec 08 23:17:01 raspberrypi CRON[3591]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 08 23:17:01 raspberrypi CRON[3595]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 08 23:17:01 raspberrypi CRON[3591]: pam_unix(cron:session): session closed for user root
+Dec 09 00:17:01 raspberrypi CRON[4617]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 09 00:17:01 raspberrypi CRON[4621]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 09 00:17:01 raspberrypi CRON[4617]: pam_unix(cron:session): session closed for user root
+Dec 09 01:17:01 raspberrypi CRON[5646]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 09 01:17:01 raspberrypi CRON[5650]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 09 01:17:01 raspberrypi CRON[5646]: pam_unix(cron:session): session closed for user root
+Dec 09 01:56:10 raspberrypi systemd[1]: Starting Daily apt download activities...
+-- Subject: Unit apt-daily.service has begun start-up
+-- Defined-By: systemd
+-- Support: https://www.debian.org/support
+-- 
+-- Unit apt-daily.service has begun starting up.
+Dec 09 01:56:11 raspberrypi systemd[1]: Started Daily apt download activities.
+-- Subject: Unit apt-daily.service has finished start-up
+-- Defined-By: systemd
+-- Support: https://www.debian.org/support
+-- 
+-- Unit apt-daily.service has finished starting up.
+-- 
+-- The start-up result is done.
+Dec 09 01:56:11 raspberrypi systemd[1]: apt-daily.timer: Adding 6h 59min 26.022597s random time.
+Dec 09 01:56:11 raspberrypi systemd[1]: apt-daily.timer: Adding 9h 58min 57.241433s random time.
+Dec 09 02:17:01 raspberrypi CRON[6719]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 09 02:17:01 raspberrypi CRON[6723]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 09 02:17:01 raspberrypi CRON[6719]: pam_unix(cron:session): session closed for user root
+Dec 09 02:22:00 raspberrypi systemd[1]: Starting Cleanup of Temporary Directories...
+-- Subject: Unit systemd-tmpfiles-clean.service has begun start-up
+-- Defined-By: systemd
+-- Support: https://www.debian.org/support
+-- 
+-- Unit systemd-tmpfiles-clean.service has begun starting up.
+Dec 09 02:22:00 raspberrypi systemd[1]: Started Cleanup of Temporary Directories.
+-- Subject: Unit systemd-tmpfiles-clean.service has finished start-up
+-- Defined-By: systemd
+-- Support: https://www.debian.org/support
+-- 
+-- Unit systemd-tmpfiles-clean.service has finished starting up.
+-- 
+-- The start-up result is done.
+Dec 09 03:17:01 raspberrypi CRON[7746]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 09 03:17:01 raspberrypi CRON[7750]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 09 03:17:01 raspberrypi CRON[7746]: pam_unix(cron:session): session closed for user root
+Dec 09 04:17:01 raspberrypi CRON[8765]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 09 04:17:01 raspberrypi CRON[8769]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 09 04:17:01 raspberrypi CRON[8765]: pam_unix(cron:session): session closed for user root
+Dec 09 05:17:01 raspberrypi CRON[9785]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 09 05:17:01 raspberrypi CRON[9789]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 09 05:17:01 raspberrypi CRON[9785]: pam_unix(cron:session): session closed for user root
+Dec 09 06:04:10 raspberrypi systemd[1]: Starting Daily apt upgrade and clean activities...
+-- Subject: Unit apt-daily-upgrade.service has begun start-up
+-- Defined-By: systemd
+-- Support: https://www.debian.org/support
+-- 
+-- Unit apt-daily-upgrade.service has begun starting up.
+Dec 09 06:04:11 raspberrypi systemd[1]: Started Daily apt upgrade and clean activities.
+-- Subject: Unit apt-daily-upgrade.service has finished start-up
+-- Defined-By: systemd
+-- Support: https://www.debian.org/support
+-- 
+-- Unit apt-daily-upgrade.service has finished starting up.
+-- 
+-- The start-up result is done.
+Dec 09 06:04:11 raspberrypi systemd[1]: apt-daily-upgrade.timer: Adding 6min 39.424431s random time.
+Dec 09 06:04:11 raspberrypi systemd[1]: apt-daily-upgrade.timer: Adding 13min 45.358897s random time.
+Dec 09 06:17:01 raspberrypi CRON[10854]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 09 06:17:01 raspberrypi CRON[10858]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 09 06:17:01 raspberrypi CRON[10854]: pam_unix(cron:session): session closed for user root
+Dec 09 06:25:01 raspberrypi CRON[11047]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 09 06:25:01 raspberrypi CRON[11051]: (root) CMD (test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.daily ))
+Dec 09 06:25:02 raspberrypi liblogging-stdlog[311]:  [origin software="rsyslogd" swVersion="8.24.0" x-pid="311" x-info="http://www.rsyslog.com"] rsyslogd was HUPed
+Dec 09 06:25:02 raspberrypi CRON[11047]: pam_unix(cron:session): session closed for user root
+Dec 09 06:47:01 raspberrypi CRON[11595]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 09 06:47:01 raspberrypi CRON[11599]: (root) CMD (test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.weekly ))
+Dec 09 06:47:02 raspberrypi CRON[11595]: pam_unix(cron:session): session closed for user root
+Dec 09 07:17:01 raspberrypi CRON[12113]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 09 07:17:01 raspberrypi CRON[12117]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 09 07:17:01 raspberrypi CRON[12113]: pam_unix(cron:session): session closed for user root
+Dec 09 08:17:01 raspberrypi CRON[13134]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 09 08:17:01 raspberrypi CRON[13138]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 09 08:17:02 raspberrypi CRON[13134]: pam_unix(cron:session): session closed for user root
+Dec 09 09:17:01 raspberrypi CRON[14153]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 09 09:17:01 raspberrypi CRON[14157]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 09 09:17:01 raspberrypi CRON[14153]: pam_unix(cron:session): session closed for user root
+Dec 09 10:17:01 raspberrypi CRON[15171]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 09 10:17:01 raspberrypi CRON[15175]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 09 10:17:01 raspberrypi CRON[15171]: pam_unix(cron:session): session closed for user root
+Dec 09 11:17:01 raspberrypi CRON[16191]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 09 11:17:01 raspberrypi CRON[16195]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 09 11:17:01 raspberrypi CRON[16191]: pam_unix(cron:session): session closed for user root
+Dec 09 12:17:01 raspberrypi CRON[17210]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 09 12:17:01 raspberrypi CRON[17214]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 09 12:17:01 raspberrypi CRON[17210]: pam_unix(cron:session): session closed for user root
+Dec 09 13:17:01 raspberrypi CRON[18229]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 09 13:17:01 raspberrypi CRON[18233]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 09 13:17:01 raspberrypi CRON[18229]: pam_unix(cron:session): session closed for user root
+Dec 09 14:17:01 raspberrypi CRON[19246]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 09 14:17:01 raspberrypi CRON[19250]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 09 14:17:01 raspberrypi CRON[19246]: pam_unix(cron:session): session closed for user root
+Dec 09 15:17:01 raspberrypi CRON[20265]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 09 15:17:01 raspberrypi CRON[20269]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 09 15:17:01 raspberrypi CRON[20265]: pam_unix(cron:session): session closed for user root
+Dec 09 15:59:10 raspberrypi systemd[1]: Starting Daily apt download activities...
+-- Subject: Unit apt-daily.service has begun start-up
+-- Defined-By: systemd
+-- Support: https://www.debian.org/support
+-- 
+-- Unit apt-daily.service has begun starting up.
+Dec 09 15:59:11 raspberrypi systemd[1]: Started Daily apt download activities.
+-- Subject: Unit apt-daily.service has finished start-up
+-- Defined-By: systemd
+-- Support: https://www.debian.org/support
+-- 
+-- Unit apt-daily.service has finished starting up.
+-- 
+-- The start-up result is done.
+Dec 09 15:59:11 raspberrypi systemd[1]: apt-daily.timer: Adding 10h 24min 56.588917s random time.
+Dec 09 15:59:11 raspberrypi systemd[1]: apt-daily.timer: Adding 8h 6min 36.868228s random time.
+Dec 09 16:17:01 raspberrypi CRON[21326]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 09 16:17:01 raspberrypi CRON[21330]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 09 16:17:01 raspberrypi CRON[21326]: pam_unix(cron:session): session closed for user root
+Dec 09 17:17:01 raspberrypi CRON[22343]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 09 17:17:01 raspberrypi CRON[22347]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 09 17:17:01 raspberrypi CRON[22343]: pam_unix(cron:session): session closed for user root
+Dec 09 18:17:01 raspberrypi CRON[23354]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 09 18:17:01 raspberrypi CRON[23358]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 09 18:17:01 raspberrypi CRON[23354]: pam_unix(cron:session): session closed for user root
+Dec 09 19:17:01 raspberrypi CRON[24363]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 09 19:17:01 raspberrypi CRON[24367]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 09 19:17:01 raspberrypi CRON[24363]: pam_unix(cron:session): session closed for user root
+Dec 09 20:17:01 raspberrypi CRON[25379]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 09 20:17:01 raspberrypi CRON[25383]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 09 20:17:01 raspberrypi CRON[25379]: pam_unix(cron:session): session closed for user root
+Dec 09 21:17:01 raspberrypi CRON[26389]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 09 21:17:01 raspberrypi CRON[26393]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 09 21:17:01 raspberrypi CRON[26389]: pam_unix(cron:session): session closed for user root
+Dec 09 22:17:01 raspberrypi CRON[27399]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 09 22:17:01 raspberrypi CRON[27403]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 09 22:17:01 raspberrypi CRON[27399]: pam_unix(cron:session): session closed for user root
+Dec 09 23:17:01 raspberrypi CRON[28406]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 09 23:17:01 raspberrypi CRON[28410]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 09 23:17:01 raspberrypi CRON[28406]: pam_unix(cron:session): session closed for user root
+Dec 10 00:17:01 raspberrypi CRON[29408]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 10 00:17:01 raspberrypi CRON[29412]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 10 00:17:01 raspberrypi CRON[29408]: pam_unix(cron:session): session closed for user root
+Dec 10 01:17:01 raspberrypi CRON[30410]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 10 01:17:01 raspberrypi CRON[30414]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 10 01:17:01 raspberrypi CRON[30410]: pam_unix(cron:session): session closed for user root
+Dec 10 02:07:10 raspberrypi systemd[1]: Starting Daily apt download activities...
+-- Subject: Unit apt-daily.service has begun start-up
+-- Defined-By: systemd
+-- Support: https://www.debian.org/support
+-- 
+-- Unit apt-daily.service has begun starting up.
+Dec 10 02:07:11 raspberrypi systemd[1]: Started Daily apt download activities.
+-- Subject: Unit apt-daily.service has finished start-up
+-- Defined-By: systemd
+-- Support: https://www.debian.org/support
+-- 
+-- Unit apt-daily.service has finished starting up.
+-- 
+-- The start-up result is done.
+Dec 10 02:07:11 raspberrypi systemd[1]: apt-daily.timer: Adding 6h 54min 39.596799s random time.
+Dec 10 02:07:11 raspberrypi systemd[1]: apt-daily.timer: Adding 32min 23.958356s random time.
+Dec 10 02:17:01 raspberrypi CRON[31462]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 10 02:17:01 raspberrypi CRON[31466]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 10 02:17:01 raspberrypi CRON[31462]: pam_unix(cron:session): session closed for user root
+Dec 10 02:22:10 raspberrypi systemd[1]: Starting Cleanup of Temporary Directories...
+-- Subject: Unit systemd-tmpfiles-clean.service has begun start-up
+-- Defined-By: systemd
+-- Support: https://www.debian.org/support
+-- 
+-- Unit systemd-tmpfiles-clean.service has begun starting up.
+Dec 10 02:22:10 raspberrypi systemd[1]: Started Cleanup of Temporary Directories.
+-- Subject: Unit systemd-tmpfiles-clean.service has finished start-up
+-- Defined-By: systemd
+-- Support: https://www.debian.org/support
+-- 
+-- Unit systemd-tmpfiles-clean.service has finished starting up.
+-- 
+-- The start-up result is done.
+Dec 10 03:17:01 raspberrypi CRON[32468]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 10 03:17:01 raspberrypi CRON[32472]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 10 03:17:01 raspberrypi CRON[32468]: pam_unix(cron:session): session closed for user root
+Dec 10 04:17:01 raspberrypi CRON[1151]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 10 04:17:01 raspberrypi CRON[1155]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 10 04:17:01 raspberrypi CRON[1151]: pam_unix(cron:session): session closed for user root
+Dec 10 05:17:01 raspberrypi CRON[2183]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 10 05:17:01 raspberrypi CRON[2187]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 10 05:17:01 raspberrypi CRON[2183]: pam_unix(cron:session): session closed for user root
+Dec 10 06:14:10 raspberrypi systemd[1]: Starting Daily apt upgrade and clean activities...
+-- Subject: Unit apt-daily-upgrade.service has begun start-up
+-- Defined-By: systemd
+-- Support: https://www.debian.org/support
+-- 
+-- Unit apt-daily-upgrade.service has begun starting up.
+Dec 10 06:14:11 raspberrypi systemd[1]: Started Daily apt upgrade and clean activities.
+-- Subject: Unit apt-daily-upgrade.service has finished start-up
+-- Defined-By: systemd
+-- Support: https://www.debian.org/support
+-- 
+-- Unit apt-daily-upgrade.service has finished starting up.
+-- 
+-- The start-up result is done.
+Dec 10 06:14:11 raspberrypi systemd[1]: apt-daily-upgrade.timer: Adding 15min 51.687577s random time.
+Dec 10 06:14:11 raspberrypi systemd[1]: apt-daily-upgrade.timer: Adding 17min 48.944573s random time.
+Dec 10 06:17:01 raspberrypi CRON[3232]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 10 06:17:01 raspberrypi CRON[3236]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 10 06:17:01 raspberrypi CRON[3232]: pam_unix(cron:session): session closed for user root
+Dec 10 06:25:01 raspberrypi CRON[3379]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 10 06:25:01 raspberrypi CRON[3383]: (root) CMD (test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.daily ))
+Dec 10 06:25:02 raspberrypi liblogging-stdlog[311]:  [origin software="rsyslogd" swVersion="8.24.0" x-pid="311" x-info="http://www.rsyslog.com"] rsyslogd was HUPed
+Dec 10 06:25:02 raspberrypi liblogging-stdlog[311]:  [origin software="rsyslogd" swVersion="8.24.0" x-pid="311" x-info="http://www.rsyslog.com"] rsyslogd was HUPed
+Dec 10 06:25:02 raspberrypi CRON[3379]: pam_unix(cron:session): session closed for user root
+Dec 10 06:33:10 raspberrypi systemd[1]: Starting Daily apt download activities...
+-- Subject: Unit apt-daily.service has begun start-up
+-- Defined-By: systemd
+-- Support: https://www.debian.org/support
+-- 
+-- Unit apt-daily.service has begun starting up.
+Dec 10 06:33:11 raspberrypi systemd[1]: Started Daily apt download activities.
+-- Subject: Unit apt-daily.service has finished start-up
+-- Defined-By: systemd
+-- Support: https://www.debian.org/support
+-- 
+-- Unit apt-daily.service has finished starting up.
+-- 
+-- The start-up result is done.
+Dec 10 06:33:11 raspberrypi systemd[1]: apt-daily.timer: Adding 2h 11min 46.183945s random time.
+Dec 10 06:33:11 raspberrypi systemd[1]: apt-daily.timer: Adding 3h 49min 24.764554s random time.
+Dec 10 07:17:01 raspberrypi CRON[4405]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 10 07:17:01 raspberrypi CRON[4409]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 10 07:17:01 raspberrypi CRON[4405]: pam_unix(cron:session): session closed for user root
+Dec 10 08:17:01 raspberrypi CRON[5409]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 10 08:17:01 raspberrypi CRON[5413]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 10 08:17:02 raspberrypi CRON[5409]: pam_unix(cron:session): session closed for user root
+Dec 10 09:17:01 raspberrypi CRON[6408]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 10 09:17:01 raspberrypi CRON[6412]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 10 09:17:01 raspberrypi CRON[6408]: pam_unix(cron:session): session closed for user root
+Dec 10 10:17:01 raspberrypi CRON[7402]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 10 10:17:01 raspberrypi CRON[7406]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 10 10:17:01 raspberrypi CRON[7402]: pam_unix(cron:session): session closed for user root
+Dec 10 11:17:01 raspberrypi CRON[8403]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 10 11:17:01 raspberrypi CRON[8407]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 10 11:17:01 raspberrypi CRON[8403]: pam_unix(cron:session): session closed for user root
+Dec 10 12:17:01 raspberrypi CRON[9401]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 10 12:17:01 raspberrypi CRON[9405]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 10 12:17:01 raspberrypi CRON[9401]: pam_unix(cron:session): session closed for user root
+Dec 10 13:17:01 raspberrypi CRON[10399]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 10 13:17:01 raspberrypi CRON[10403]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 10 13:17:01 raspberrypi CRON[10399]: pam_unix(cron:session): session closed for user root
+Dec 10 14:17:01 raspberrypi CRON[11501]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 10 14:17:01 raspberrypi CRON[11505]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 10 14:17:01 raspberrypi CRON[11501]: pam_unix(cron:session): session closed for user root
+Dec 10 15:17:01 raspberrypi CRON[12509]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 10 15:17:01 raspberrypi CRON[12513]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 10 15:17:01 raspberrypi CRON[12509]: pam_unix(cron:session): session closed for user root
+Dec 10 16:17:01 raspberrypi CRON[13506]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 10 16:17:01 raspberrypi CRON[13510]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 10 16:17:01 raspberrypi CRON[13506]: pam_unix(cron:session): session closed for user root
+Dec 10 17:17:01 raspberrypi CRON[14501]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 10 17:17:01 raspberrypi CRON[14505]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 10 17:17:01 raspberrypi CRON[14501]: pam_unix(cron:session): session closed for user root
+Dec 10 18:17:01 raspberrypi CRON[15492]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 10 18:17:01 raspberrypi CRON[15496]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 10 18:17:01 raspberrypi CRON[15492]: pam_unix(cron:session): session closed for user root
+Dec 10 19:17:01 raspberrypi CRON[16484]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 10 19:17:01 raspberrypi CRON[16488]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 10 19:17:01 raspberrypi CRON[16484]: pam_unix(cron:session): session closed for user root
+Dec 10 20:17:01 raspberrypi CRON[17473]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 10 20:17:01 raspberrypi CRON[17477]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 10 20:17:01 raspberrypi CRON[17473]: pam_unix(cron:session): session closed for user root
+Dec 10 21:17:01 raspberrypi CRON[18461]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 10 21:17:01 raspberrypi CRON[18465]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 10 21:17:01 raspberrypi CRON[18461]: pam_unix(cron:session): session closed for user root
+Dec 10 21:50:10 raspberrypi systemd[1]: Starting Daily apt download activities...
+-- Subject: Unit apt-daily.service has begun start-up
+-- Defined-By: systemd
+-- Support: https://www.debian.org/support
+-- 
+-- Unit apt-daily.service has begun starting up.
+Dec 10 21:50:11 raspberrypi systemd[1]: Started Daily apt download activities.
+-- Subject: Unit apt-daily.service has finished start-up
+-- Defined-By: systemd
+-- Support: https://www.debian.org/support
+-- 
+-- Unit apt-daily.service has finished starting up.
+-- 
+-- The start-up result is done.
+Dec 10 21:50:11 raspberrypi systemd[1]: apt-daily.timer: Adding 8h 13min 41.344543s random time.
+Dec 10 21:50:11 raspberrypi systemd[1]: apt-daily.timer: Adding 8h 59min 54.017789s random time.
+Dec 10 22:17:01 raspberrypi CRON[19499]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 10 22:17:01 raspberrypi CRON[19503]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 10 22:17:01 raspberrypi CRON[19499]: pam_unix(cron:session): session closed for user root
+Dec 10 23:17:01 raspberrypi CRON[20489]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 10 23:17:01 raspberrypi CRON[20493]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 10 23:17:01 raspberrypi CRON[20489]: pam_unix(cron:session): session closed for user root
+Dec 11 00:17:01 raspberrypi CRON[21480]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 11 00:17:01 raspberrypi CRON[21484]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 11 00:17:01 raspberrypi CRON[21480]: pam_unix(cron:session): session closed for user root
+Dec 11 01:17:01 raspberrypi CRON[22468]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 11 01:17:01 raspberrypi CRON[22472]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 11 01:17:01 raspberrypi CRON[22468]: pam_unix(cron:session): session closed for user root
+Dec 11 02:17:01 raspberrypi CRON[23459]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 11 02:17:01 raspberrypi CRON[23463]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 11 02:17:01 raspberrypi CRON[23459]: pam_unix(cron:session): session closed for user root
+Dec 11 02:23:10 raspberrypi systemd[1]: Starting Cleanup of Temporary Directories...
+-- Subject: Unit systemd-tmpfiles-clean.service has begun start-up
+-- Defined-By: systemd
+-- Support: https://www.debian.org/support
+-- 
+-- Unit systemd-tmpfiles-clean.service has begun starting up.
+Dec 11 02:23:10 raspberrypi systemd[1]: Started Cleanup of Temporary Directories.
+-- Subject: Unit systemd-tmpfiles-clean.service has finished start-up
+-- Defined-By: systemd
+-- Support: https://www.debian.org/support
+-- 
+-- Unit systemd-tmpfiles-clean.service has finished starting up.
+-- 
+-- The start-up result is done.
+Dec 11 03:17:01 raspberrypi CRON[24447]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 11 03:17:01 raspberrypi CRON[24451]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 11 03:17:01 raspberrypi CRON[24447]: pam_unix(cron:session): session closed for user root
+Dec 11 04:17:01 raspberrypi CRON[25438]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 11 04:17:01 raspberrypi CRON[25442]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 11 04:17:01 raspberrypi CRON[25438]: pam_unix(cron:session): session closed for user root
+Dec 11 05:17:01 raspberrypi CRON[26422]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 11 05:17:01 raspberrypi CRON[26426]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 11 05:17:01 raspberrypi CRON[26422]: pam_unix(cron:session): session closed for user root
+Dec 11 06:17:01 raspberrypi CRON[27405]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 11 06:17:01 raspberrypi CRON[27409]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 11 06:17:01 raspberrypi CRON[27405]: pam_unix(cron:session): session closed for user root
+Dec 11 06:18:10 raspberrypi systemd[1]: Starting Daily apt upgrade and clean activities...
+-- Subject: Unit apt-daily-upgrade.service has begun start-up
+-- Defined-By: systemd
+-- Support: https://www.debian.org/support
+-- 
+-- Unit apt-daily-upgrade.service has begun starting up.
+Dec 11 06:18:11 raspberrypi systemd[1]: Started Daily apt upgrade and clean activities.
+-- Subject: Unit apt-daily-upgrade.service has finished start-up
+-- Defined-By: systemd
+-- Support: https://www.debian.org/support
+-- 
+-- Unit apt-daily-upgrade.service has finished starting up.
+-- 
+-- The start-up result is done.
+Dec 11 06:18:11 raspberrypi systemd[1]: apt-daily-upgrade.timer: Adding 38min 38.252024s random time.
+Dec 11 06:18:11 raspberrypi systemd[1]: apt-daily-upgrade.timer: Adding 13min 54.251380s random time.
+Dec 11 06:25:01 raspberrypi CRON[27595]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 11 06:25:01 raspberrypi CRON[27599]: (root) CMD (test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.daily ))
+Dec 11 06:25:02 raspberrypi liblogging-stdlog[311]:  [origin software="rsyslogd" swVersion="8.24.0" x-pid="311" x-info="http://www.rsyslog.com"] rsyslogd was HUPed
+Dec 11 06:25:02 raspberrypi CRON[27595]: pam_unix(cron:session): session closed for user root
+Dec 11 07:17:01 raspberrypi CRON[28551]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 11 07:17:01 raspberrypi CRON[28555]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 11 07:17:01 raspberrypi CRON[28551]: pam_unix(cron:session): session closed for user root
+Dec 11 08:17:01 raspberrypi CRON[29534]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 11 08:17:01 raspberrypi CRON[29538]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 11 08:17:01 raspberrypi CRON[29534]: pam_unix(cron:session): session closed for user root
+Dec 11 09:17:01 raspberrypi CRON[30515]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 11 09:17:01 raspberrypi CRON[30519]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 11 09:17:01 raspberrypi CRON[30515]: pam_unix(cron:session): session closed for user root
+Dec 11 10:17:01 raspberrypi CRON[31499]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 11 10:17:01 raspberrypi CRON[31503]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 11 10:17:01 raspberrypi CRON[31499]: pam_unix(cron:session): session closed for user root
+Dec 11 11:17:01 raspberrypi CRON[32481]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 11 11:17:01 raspberrypi CRON[32485]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 11 11:17:02 raspberrypi CRON[32481]: pam_unix(cron:session): session closed for user root
+Dec 11 12:17:01 raspberrypi CRON[1140]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 11 12:17:01 raspberrypi CRON[1144]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 11 12:17:01 raspberrypi CRON[1140]: pam_unix(cron:session): session closed for user root
+Dec 11 13:17:01 raspberrypi CRON[2147]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 11 13:17:01 raspberrypi CRON[2151]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 11 13:17:01 raspberrypi CRON[2147]: pam_unix(cron:session): session closed for user root
+Dec 11 14:17:01 raspberrypi CRON[3128]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 11 14:17:01 raspberrypi CRON[3132]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 11 14:17:01 raspberrypi CRON[3128]: pam_unix(cron:session): session closed for user root
+Dec 11 15:00:10 raspberrypi systemd[1]: Starting Daily apt download activities...
+-- Subject: Unit apt-daily.service has begun start-up
+-- Defined-By: systemd
+-- Support: https://www.debian.org/support
+-- 
+-- Unit apt-daily.service has begun starting up.
+Dec 11 15:00:11 raspberrypi systemd[1]: Started Daily apt download activities.
+-- Subject: Unit apt-daily.service has finished start-up
+-- Defined-By: systemd
+-- Support: https://www.debian.org/support
+-- 
+-- Unit apt-daily.service has finished starting up.
+-- 
+-- The start-up result is done.
+Dec 11 15:00:11 raspberrypi systemd[1]: apt-daily.timer: Adding 35min 3.403141s random time.
+Dec 11 15:00:11 raspberrypi systemd[1]: apt-daily.timer: Adding 5h 54min 43.155087s random time.
+Dec 11 15:17:01 raspberrypi CRON[4157]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 11 15:17:01 raspberrypi CRON[4161]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 11 15:17:01 raspberrypi CRON[4157]: pam_unix(cron:session): session closed for user root
+Dec 11 16:17:01 raspberrypi CRON[5135]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 11 16:17:01 raspberrypi CRON[5139]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 11 16:17:01 raspberrypi CRON[5135]: pam_unix(cron:session): session closed for user root
+Dec 11 17:17:01 raspberrypi CRON[6110]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 11 17:17:01 raspberrypi CRON[6114]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 11 17:17:01 raspberrypi CRON[6110]: pam_unix(cron:session): session closed for user root
+Dec 11 18:17:01 raspberrypi CRON[7086]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 11 18:17:01 raspberrypi CRON[7090]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 11 18:17:01 raspberrypi CRON[7086]: pam_unix(cron:session): session closed for user root
+Dec 11 19:17:01 raspberrypi CRON[8064]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 11 19:17:01 raspberrypi CRON[8068]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 11 19:17:01 raspberrypi CRON[8064]: pam_unix(cron:session): session closed for user root
+Dec 11 20:17:01 raspberrypi CRON[9042]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 11 20:17:01 raspberrypi CRON[9046]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 11 20:17:01 raspberrypi CRON[9042]: pam_unix(cron:session): session closed for user root
+Dec 11 21:17:01 raspberrypi CRON[10017]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 11 21:17:01 raspberrypi CRON[10021]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 11 21:17:01 raspberrypi CRON[10017]: pam_unix(cron:session): session closed for user root
+Dec 11 22:14:53 raspberrypi sshd[11005]: Accepted password for pi from 192.168.50.157 port 18975 ssh2
+Dec 11 22:14:53 raspberrypi sshd[11005]: pam_unix(sshd:session): session opened for user pi by (uid=0)
+Dec 11 22:14:53 raspberrypi systemd-logind[319]: New session c14 of user pi.
+-- Subject: A new session c14 has been created for user pi
+-- Defined-By: systemd
+-- Support: https://www.debian.org/support
+-- Documentation: http://www.freedesktop.org/wiki/Software/systemd/multiseat
+-- 
+-- A new session with the ID c14 has been created for the user pi.
+-- 
+-- The leading process of the session is 11005.
+Dec 11 22:14:53 raspberrypi systemd[1]: Started Session c14 of user pi.
+-- Subject: Unit session-c14.scope has finished start-up
+-- Defined-By: systemd
+-- Support: https://www.debian.org/support
+-- 
+-- Unit session-c14.scope has finished starting up.
+-- 
+-- The start-up result is done.
+Dec 11 22:17:01 raspberrypi CRON[11051]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 11 22:17:01 raspberrypi CRON[11055]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 11 22:17:01 raspberrypi CRON[11051]: pam_unix(cron:session): session closed for user root
+Dec 11 22:31:44 raspberrypi sshd[11005]: pam_unix(sshd:session): session closed for user pi
+Dec 11 22:31:44 raspberrypi systemd-logind[319]: Removed session c14.
+-- Subject: Session c14 has been terminated
+-- Defined-By: systemd
+-- Support: https://www.debian.org/support
+-- Documentation: http://www.freedesktop.org/wiki/Software/systemd/multiseat
+-- 
+-- A session with the ID c14 has been terminated.
+Dec 11 23:17:01 raspberrypi CRON[12089]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 11 23:17:01 raspberrypi CRON[12093]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 11 23:17:01 raspberrypi CRON[12089]: pam_unix(cron:session): session closed for user root
+Dec 11 23:55:10 raspberrypi systemd[1]: Starting Daily apt download activities...
+-- Subject: Unit apt-daily.service has begun start-up
+-- Defined-By: systemd
+-- Support: https://www.debian.org/support
+-- 
+-- Unit apt-daily.service has begun starting up.
+Dec 11 23:55:11 raspberrypi systemd[1]: Started Daily apt download activities.
+-- Subject: Unit apt-daily.service has finished start-up
+-- Defined-By: systemd
+-- Support: https://www.debian.org/support
+-- 
+-- Unit apt-daily.service has finished starting up.
+-- 
+-- The start-up result is done.
+Dec 11 23:55:11 raspberrypi systemd[1]: apt-daily.timer: Adding 3h 9min 12.236446s random time.
+Dec 11 23:55:11 raspberrypi systemd[1]: apt-daily.timer: Adding 1h 50min 14.114062s random time.
+Dec 12 00:17:01 raspberrypi CRON[13110]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 12 00:17:01 raspberrypi CRON[13114]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 12 00:17:01 raspberrypi CRON[13110]: pam_unix(cron:session): session closed for user root
+Dec 12 01:17:01 raspberrypi CRON[14084]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 12 01:17:01 raspberrypi CRON[14088]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 12 01:17:01 raspberrypi CRON[14084]: pam_unix(cron:session): session closed for user root
+Dec 12 02:17:02 raspberrypi CRON[15054]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 12 02:17:02 raspberrypi CRON[15058]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 12 02:17:02 raspberrypi CRON[15054]: pam_unix(cron:session): session closed for user root
+Dec 12 02:24:10 raspberrypi systemd[1]: Starting Cleanup of Temporary Directories...
+-- Subject: Unit systemd-tmpfiles-clean.service has begun start-up
+-- Defined-By: systemd
+-- Support: https://www.debian.org/support
+-- 
+-- Unit systemd-tmpfiles-clean.service has begun starting up.
+Dec 12 02:24:10 raspberrypi systemd[1]: Started Cleanup of Temporary Directories.
+-- Subject: Unit systemd-tmpfiles-clean.service has finished start-up
+-- Defined-By: systemd
+-- Support: https://www.debian.org/support
+-- 
+-- Unit systemd-tmpfiles-clean.service has finished starting up.
+-- 
+-- The start-up result is done.
+Dec 12 03:17:01 raspberrypi CRON[16027]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 12 03:17:01 raspberrypi CRON[16031]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 12 03:17:01 raspberrypi CRON[16027]: pam_unix(cron:session): session closed for user root
+Dec 12 04:17:01 raspberrypi CRON[16991]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 12 04:17:01 raspberrypi CRON[16995]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 12 04:17:01 raspberrypi CRON[16991]: pam_unix(cron:session): session closed for user root
+Dec 12 05:17:01 raspberrypi CRON[17966]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 12 05:17:01 raspberrypi CRON[17970]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 12 05:17:01 raspberrypi CRON[17966]: pam_unix(cron:session): session closed for user root
+Dec 12 06:14:10 raspberrypi systemd[1]: Starting Daily apt upgrade and clean activities...
+-- Subject: Unit apt-daily-upgrade.service has begun start-up
+-- Defined-By: systemd
+-- Support: https://www.debian.org/support
+-- 
+-- Unit apt-daily-upgrade.service has begun starting up.
+Dec 12 06:14:11 raspberrypi systemd[1]: Started Daily apt upgrade and clean activities.
+-- Subject: Unit apt-daily-upgrade.service has finished start-up
+-- Defined-By: systemd
+-- Support: https://www.debian.org/support
+-- 
+-- Unit apt-daily-upgrade.service has finished starting up.
+-- 
+-- The start-up result is done.
+Dec 12 06:14:11 raspberrypi systemd[1]: apt-daily-upgrade.timer: Adding 23min 26.789910s random time.
+Dec 12 06:14:11 raspberrypi systemd[1]: apt-daily-upgrade.timer: Adding 6min 57.577576s random time.
+Dec 12 06:17:01 raspberrypi CRON[18975]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 12 06:17:01 raspberrypi CRON[18980]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 12 06:17:01 raspberrypi CRON[18975]: pam_unix(cron:session): session closed for user root
+Dec 12 06:25:01 raspberrypi CRON[19116]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 12 06:25:01 raspberrypi CRON[19120]: (root) CMD (test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.daily ))
+Dec 12 06:25:02 raspberrypi liblogging-stdlog[311]:  [origin software="rsyslogd" swVersion="8.24.0" x-pid="311" x-info="http://www.rsyslog.com"] rsyslogd was HUPed
+Dec 12 06:25:02 raspberrypi CRON[19116]: pam_unix(cron:session): session closed for user root
+Dec 12 07:17:01 raspberrypi CRON[20057]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 12 07:17:01 raspberrypi CRON[20061]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 12 07:17:01 raspberrypi CRON[20057]: pam_unix(cron:session): session closed for user root
+Dec 12 07:51:10 raspberrypi systemd[1]: Starting Daily apt download activities...
+-- Subject: Unit apt-daily.service has begun start-up
+-- Defined-By: systemd
+-- Support: https://www.debian.org/support
+-- 
+-- Unit apt-daily.service has begun starting up.
+Dec 12 07:51:11 raspberrypi systemd[1]: Started Daily apt download activities.
+-- Subject: Unit apt-daily.service has finished start-up
+-- Defined-By: systemd
+-- Support: https://www.debian.org/support
+-- 
+-- Unit apt-daily.service has finished starting up.
+-- 
+-- The start-up result is done.
+Dec 12 07:51:11 raspberrypi systemd[1]: apt-daily.timer: Adding 7h 4min 54.338629s random time.
+Dec 12 07:51:11 raspberrypi systemd[1]: apt-daily.timer: Adding 7h 43min 55.323054s random time.
+Dec 12 08:17:01 raspberrypi CRON[21072]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 12 08:17:01 raspberrypi CRON[21076]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 12 08:17:01 raspberrypi CRON[21072]: pam_unix(cron:session): session closed for user root
+Dec 12 09:17:01 raspberrypi CRON[22036]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 12 09:17:01 raspberrypi CRON[22040]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 12 09:17:01 raspberrypi CRON[22036]: pam_unix(cron:session): session closed for user root
+Dec 12 10:17:01 raspberrypi CRON[23003]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 12 10:17:01 raspberrypi CRON[23007]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 12 10:17:01 raspberrypi CRON[23003]: pam_unix(cron:session): session closed for user root
+Dec 12 11:17:01 raspberrypi CRON[23971]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 12 11:17:01 raspberrypi CRON[23975]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 12 11:17:01 raspberrypi CRON[23971]: pam_unix(cron:session): session closed for user root
+Dec 12 12:17:01 raspberrypi CRON[24935]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 12 12:17:01 raspberrypi CRON[24939]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 12 12:17:01 raspberrypi CRON[24935]: pam_unix(cron:session): session closed for user root
+Dec 12 13:17:01 raspberrypi CRON[25892]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 12 13:17:01 raspberrypi CRON[25896]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 12 13:17:02 raspberrypi CRON[25892]: pam_unix(cron:session): session closed for user root
+Dec 12 14:17:01 raspberrypi CRON[26862]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 12 14:17:01 raspberrypi CRON[26866]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 12 14:17:01 raspberrypi CRON[26862]: pam_unix(cron:session): session closed for user root
+Dec 12 15:17:01 raspberrypi CRON[27832]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 12 15:17:01 raspberrypi CRON[27836]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 12 15:17:01 raspberrypi CRON[27832]: pam_unix(cron:session): session closed for user root
+Dec 12 15:54:52 raspberrypi sshd[28446]: Accepted password for pi from 192.168.50.157 port 36593 ssh2
+Dec 12 15:54:52 raspberrypi sshd[28446]: pam_unix(sshd:session): session opened for user pi by (uid=0)
+Dec 12 15:54:52 raspberrypi systemd-logind[319]: New session c15 of user pi.
+-- Subject: A new session c15 has been created for user pi
+-- Defined-By: systemd
+-- Support: https://www.debian.org/support
+-- Documentation: http://www.freedesktop.org/wiki/Software/systemd/multiseat
+-- 
+-- A new session with the ID c15 has been created for the user pi.
+-- 
+-- The leading process of the session is 28446.
+Dec 12 15:54:52 raspberrypi systemd[1]: Started Session c15 of user pi.
+-- Subject: Unit session-c15.scope has finished start-up
+-- Defined-By: systemd
+-- Support: https://www.debian.org/support
+-- 
+-- Unit session-c15.scope has finished starting up.
+-- 
+-- The start-up result is done.
+Dec 12 16:04:27 raspberrypi sudo[28714]: [0;1;39m      pi : TTY=pts/0 ; PWD=/home/pi/sc2-salt/client/build/uploads ; USER=root ; COMMAND=/usr/bin/apt upgrade[0m
+Dec 12 16:04:27 raspberrypi sudo[28714]: pam_unix(sudo:session): session opened for user root by pi(uid=0)
+Dec 12 16:04:30 raspberrypi sudo[28714]: pam_unix(sudo:session): session closed for user root
+Dec 12 16:04:32 raspberrypi sudo[28727]: [0;1;39m      pi : TTY=pts/0 ; PWD=/home/pi/sc2-salt/client/build/uploads ; USER=root ; COMMAND=/usr/bin/apt update[0m
+Dec 12 16:04:32 raspberrypi sudo[28727]: pam_unix(sudo:session): session opened for user root by pi(uid=0)
+Dec 12 16:07:19 raspberrypi dbus[312]: [0;1;39m[system] Activating via systemd: service name='org.freedesktop.PackageKit' unit='packagekit.service'[0m
+Dec 12 16:07:19 raspberrypi systemd[1]: Starting PackageKit Daemon...
+-- Subject: Unit packagekit.service has begun start-up
+-- Defined-By: systemd
+-- Support: https://www.debian.org/support
+-- 
+-- Unit packagekit.service has begun starting up.
+Dec 12 16:07:19 raspberrypi PackageKit[28922]: daemon start
+Dec 12 16:07:19 raspberrypi dbus[312]: [0;1;39m[system] Successfully activated service 'org.freedesktop.PackageKit'[0m
+Dec 12 16:07:19 raspberrypi systemd[1]: Started PackageKit Daemon.
+-- Subject: Unit packagekit.service has finished start-up
+-- Defined-By: systemd
+-- Support: https://www.debian.org/support
+-- 
+-- Unit packagekit.service has finished starting up.
+-- 
+-- The start-up result is done.
+Dec 12 16:07:25 raspberrypi sudo[28727]: pam_unix(sudo:session): session closed for user root
+Dec 12 16:08:46 raspberrypi sudo[28957]: [0;1;39m      pi : TTY=pts/0 ; PWD=/home/pi/sc2-salt/client/build/uploads ; USER=root ; COMMAND=/usr/bin/apt upgrade[0m
+Dec 12 16:08:46 raspberrypi sudo[28957]: pam_unix(sudo:session): session opened for user root by pi(uid=0)
+Dec 12 16:17:01 raspberrypi CRON[29100]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 12 16:17:01 raspberrypi CRON[29104]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 12 16:17:01 raspberrypi CRON[29100]: pam_unix(cron:session): session closed for user root
+Dec 12 16:27:27 raspberrypi sudo[28957]: pam_unix(sudo:session): session closed for user root
+Dec 12 16:27:29 raspberrypi sudo[29281]: [0;1;39m      pi : TTY=pts/0 ; PWD=/home/pi/sc2-salt/client/build/uploads ; USER=root ; COMMAND=/usr/bin/apt upgrade[0m
+Dec 12 16:27:29 raspberrypi sudo[29281]: pam_unix(sudo:session): session opened for user root by pi(uid=0)
+Dec 12 16:42:26 raspberrypi systemd[1]: Reloading.
+Dec 12 16:42:26 raspberrypi systemd[1]: [0;1;39m[/lib/systemd/system/redis-server.service:14] Unknown lvalue 'RunTimeDirectory' in section 'Service'[0m
+Dec 12 16:42:26 raspberrypi systemd[1]: apt-daily.timer: Adding 6h 22min 53.945007s random time.
+Dec 12 16:42:26 raspberrypi systemd[1]: apt-daily-upgrade.timer: Adding 16min 37.765779s random time.
+Dec 12 16:42:26 raspberrypi systemd[1]: Stopping Docker Application Container Engine...
+-- Subject: Unit docker.service has begun shutting down
+-- Defined-By: systemd
+-- Support: https://www.debian.org/support
+-- 
+-- Unit docker.service has begun shutting down.
+Dec 12 16:42:27 raspberrypi dockerd[452]: time="2018-12-12T16:42:27.020102258-08:00" level=info msg="Processing signal 'terminated'"
+Dec 12 16:42:29 raspberrypi dockerd[452]: time="2018-12-12T16:42:29-08:00" level=info msg="shim reaped" id=64468186194ae178fbdf6a4e4a7c3d4df8e82d6ec85834ecfcb91732fa0e769b
+Dec 12 16:42:29 raspberrypi dockerd[452]: time="2018-12-12T16:42:29.685210495-08:00" level=error msg="attach failed with error: error attaching stdout stream: write unix /var/run/docker.sock->@: write: broken pipe"
+Dec 12 16:42:29 raspberrypi dockerd[452]: time="2018-12-12T16:42:29-08:00" level=info msg="shim reaped" id=7c12aab08998f8e05123d831e55b92c0297faeeecac59acf1cd84a4c5b70b7de
+Dec 12 16:42:29 raspberrypi dockerd[452]: time="2018-12-12T16:42:29.684741384-08:00" level=info msg="ignoring event" module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+Dec 12 16:42:29 raspberrypi dockerd[452]: time="2018-12-12T16:42:29.712083574-08:00" level=info msg="ignoring event" module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+Dec 12 16:42:29 raspberrypi dockerd[452]: time="2018-12-12T16:42:29.712617476-08:00" level=error msg="attach failed with error: error attaching stdout stream: write unix /var/run/docker.sock->@: write: broken pipe"
+Dec 12 16:42:29 raspberrypi dockerd[452]: time="2018-12-12T16:42:29-08:00" level=info msg="shim reaped" id=6bfd449ec5e0c7176530addec4acca42105c95c6681a1a75b7d0bde81e0c4807
+Dec 12 16:42:29 raspberrypi dockerd[452]: time="2018-12-12T16:42:29.782199660-08:00" level=info msg="ignoring event" module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+Dec 12 16:42:30 raspberrypi kernel: br-4a79780a7974: port 1(veth21d0aab) entered disabled state
+Dec 12 16:42:30 raspberrypi kernel: veth5b505e7: renamed from eth0
+Dec 12 16:42:30 raspberrypi dhcpcd[361]: veth21d0aab: carrier lost
+Dec 12 16:42:30 raspberrypi dhcpcd[361]: veth21d0aab: deleting route to 169.254.0.0/16
+Dec 12 16:42:30 raspberrypi avahi-daemon[320]: Withdrawing address record for 169.254.90.240 on veth21d0aab.
+Dec 12 16:42:30 raspberrypi avahi-daemon[320]: Leaving mDNS multicast group on interface veth21d0aab.IPv4 with address 169.254.90.240.
+Dec 12 16:42:30 raspberrypi avahi-daemon[320]: Interface veth21d0aab.IPv4 no longer relevant for mDNS.
+Dec 12 16:42:30 raspberrypi avahi-daemon[320]: Interface veth21d0aab.IPv6 no longer relevant for mDNS.
+Dec 12 16:42:30 raspberrypi avahi-daemon[320]: Leaving mDNS multicast group on interface veth21d0aab.IPv6 with address fe80::f098:65ff:fe77:c5b0.
+Dec 12 16:42:30 raspberrypi kernel: br-4a79780a7974: port 1(veth21d0aab) entered disabled state
+Dec 12 16:42:30 raspberrypi avahi-daemon[320]: Withdrawing address record for fe80::f098:65ff:fe77:c5b0 on veth21d0aab.
+Dec 12 16:42:30 raspberrypi kernel: device veth21d0aab left promiscuous mode
+Dec 12 16:42:30 raspberrypi kernel: br-4a79780a7974: port 1(veth21d0aab) entered disabled state
+Dec 12 16:42:30 raspberrypi kernel: veth4410911: renamed from eth0
+Dec 12 16:42:30 raspberrypi dhcpcd[361]: veth21d0aab: removing interface
+Dec 12 16:42:30 raspberrypi kernel: br-4a79780a7974: port 2(veth263ae03) entered disabled state
+Dec 12 16:42:30 raspberrypi kernel: br-4a79780a7974: port 3(vethe8664bd) entered disabled state
+Dec 12 16:42:30 raspberrypi kernel: veth3a01495: renamed from eth0
+Dec 12 16:42:30 raspberrypi dhcpcd[361]: veth4410911: waiting for carrier
+Dec 12 16:42:30 raspberrypi dhcpcd[361]: veth4410911: waiting for carrier
+Dec 12 16:42:30 raspberrypi dhcpcd[361]: veth263ae03: carrier lost
+Dec 12 16:42:30 raspberrypi kernel: br-4a79780a7974: port 2(veth263ae03) entered blocking state
+Dec 12 16:42:30 raspberrypi kernel: br-4a79780a7974: port 2(veth263ae03) entered forwarding state
+Dec 12 16:42:30 raspberrypi avahi-daemon[320]: Interface veth263ae03.IPv6 no longer relevant for mDNS.
+Dec 12 16:42:30 raspberrypi avahi-daemon[320]: Leaving mDNS multicast group on interface veth263ae03.IPv6 with address fe80::dc9f:d0ff:fe6c:c7c2.
+Dec 12 16:42:30 raspberrypi avahi-daemon[320]: Interface veth263ae03.IPv4 no longer relevant for mDNS.
+Dec 12 16:42:30 raspberrypi avahi-daemon[320]: Leaving mDNS multicast group on interface veth263ae03.IPv4 with address 169.254.64.242.
+Dec 12 16:42:30 raspberrypi kernel: br-4a79780a7974: port 2(veth263ae03) entered disabled state
+Dec 12 16:42:30 raspberrypi kernel: device veth263ae03 left promiscuous mode
+Dec 12 16:42:30 raspberrypi kernel: br-4a79780a7974: port 2(veth263ae03) entered disabled state
+Dec 12 16:42:30 raspberrypi avahi-daemon[320]: Withdrawing address record for fe80::dc9f:d0ff:fe6c:c7c2 on veth263ae03.
+Dec 12 16:42:30 raspberrypi avahi-daemon[320]: Withdrawing address record for 169.254.64.242 on veth263ae03.
+Dec 12 16:42:30 raspberrypi dhcpcd[361]: veth263ae03: deleting route to 169.254.0.0/16
+Dec 12 16:42:30 raspberrypi avahi-daemon[320]: Interface vethe8664bd.IPv6 no longer relevant for mDNS.
+Dec 12 16:42:30 raspberrypi avahi-daemon[320]: Leaving mDNS multicast group on interface vethe8664bd.IPv6 with address fe80::f5ac:e370:248c:a7d9.
+Dec 12 16:42:30 raspberrypi kernel: br-4a79780a7974: port 3(vethe8664bd) entered disabled state
+Dec 12 16:42:30 raspberrypi avahi-daemon[320]: Interface vethe8664bd.IPv4 no longer relevant for mDNS.
+Dec 12 16:42:30 raspberrypi avahi-daemon[320]: Leaving mDNS multicast group on interface vethe8664bd.IPv4 with address 169.254.150.20.
+Dec 12 16:42:30 raspberrypi avahi-daemon[320]: Withdrawing address record for fe80::f5ac:e370:248c:a7d9 on vethe8664bd.
+Dec 12 16:42:30 raspberrypi avahi-daemon[320]: Withdrawing address record for 169.254.150.20 on vethe8664bd.
+Dec 12 16:42:30 raspberrypi kernel: device vethe8664bd left promiscuous mode
+Dec 12 16:42:30 raspberrypi kernel: br-4a79780a7974: port 3(vethe8664bd) entered disabled state
+Dec 12 16:42:30 raspberrypi dhcpcd[361]: [0;1;31mvethe8664bd: arp if_readrawpacket: Network is down[0m
+Dec 12 16:42:31 raspberrypi dhcpcd[361]: [0;1;31mvethe8664bd: dhcp if_readrawpacket: Network is down[0m
+Dec 12 16:42:31 raspberrypi dhcpcd[361]: veth263ae03: removing interface
+Dec 12 16:42:31 raspberrypi dhcpcd[361]: veth4410911: removing interface
+Dec 12 16:42:31 raspberrypi dhcpcd[361]: vethe8664bd: carrier lost
+Dec 12 16:42:31 raspberrypi dhcpcd[361]: vethe8664bd: deleting route to 169.254.0.0/16
+Dec 12 16:42:31 raspberrypi dhcpcd[361]: vethe8664bd: removing interface
+Dec 12 16:42:31 raspberrypi dhcpcd[361]: br-4a79780a7974: carrier lost
+Dec 12 16:42:31 raspberrypi dhcpcd[361]: br-4a79780a7974: deleting address fe80::120d:422d:1287:651c
+Dec 12 16:42:31 raspberrypi avahi-daemon[320]: Withdrawing address record for fe80::120d:422d:1287:651c on br-4a79780a7974.
+Dec 12 16:42:31 raspberrypi avahi-daemon[320]: Leaving mDNS multicast group on interface br-4a79780a7974.IPv6 with address fe80::120d:422d:1287:651c.
+Dec 12 16:42:31 raspberrypi avahi-daemon[320]: Interface br-4a79780a7974.IPv6 no longer relevant for mDNS.
+Dec 12 16:42:31 raspberrypi avahi-daemon[320]: Withdrawing address record for 169.254.226.41 on br-4a79780a7974.
+Dec 12 16:42:31 raspberrypi dhcpcd[361]: br-4a79780a7974: deleting route to 169.254.0.0/16
+Dec 12 16:42:32 raspberrypi dockerd[452]: time="2018-12-12T16:42:32.987476220-08:00" level=info msg="pickfirstBalancer: HandleSubConnStateChange: 0x13c29460, TRANSIENT_FAILURE" module=grpc
+Dec 12 16:42:32 raspberrypi dockerd[452]: time="2018-12-12T16:42:32.987737520-08:00" level=info msg="pickfirstBalancer: HandleSubConnStateChange: 0x13c29460, CONNECTING" module=grpc
+Dec 12 16:42:32 raspberrypi dockerd[452]: time="2018-12-12T16:42:32.988133767-08:00" level=info msg="pickfirstBalancer: HandleSubConnStateChange: 0x13ea9c20, TRANSIENT_FAILURE" module=grpc
+Dec 12 16:42:32 raspberrypi dockerd[452]: time="2018-12-12T16:42:32.988269704-08:00" level=info msg="pickfirstBalancer: HandleSubConnStateChange: 0x13ea9c20, CONNECTING" module=grpc
+Dec 12 16:42:32 raspberrypi dockerd[452]: time="2018-12-12T16:42:32.988395745-08:00" level=info msg="stopping healthcheck following graceful shutdown" module=libcontainerd
+Dec 12 16:42:32 raspberrypi dockerd[452]: time="2018-12-12T16:42:32.987554761-08:00" level=info msg="pickfirstBalancer: HandleSubConnStateChange: 0x13bf1790, TRANSIENT_FAILURE" module=grpc
+Dec 12 16:42:32 raspberrypi dockerd[452]: time="2018-12-12T16:42:32.994113306-08:00" level=info msg="pickfirstBalancer: HandleSubConnStateChange: 0x13bf1790, CONNECTING" module=grpc
+Dec 12 16:42:32 raspberrypi dockerd[452]: time="2018-12-12T16:42:32.995632877-08:00" level=info msg="stopping event stream following graceful shutdown" error="context canceled" module=libcontainerd namespace=moby
+Dec 12 16:42:32 raspberrypi dockerd[452]: time="2018-12-12T16:42:32.996100322-08:00" level=info msg="stopping event stream following graceful shutdown" error="context canceled" module=libcontainerd namespace=plugins.moby
+Dec 12 16:42:34 raspberrypi systemd[1]: Stopped Docker Application Container Engine.
+-- Subject: Unit docker.service has finished shutting down
+-- Defined-By: systemd
+-- Support: https://www.debian.org/support
+-- 
+-- Unit docker.service has finished shutting down.
+Dec 12 16:42:34 raspberrypi systemd[1]: Closed Docker Socket for the API.
+-- Subject: Unit docker.socket has finished shutting down
+-- Defined-By: systemd
+-- Support: https://www.debian.org/support
+-- 
+-- Unit docker.socket has finished shutting down.
+Dec 12 16:42:43 raspberrypi systemd[1]: Reloading.
+Dec 12 16:42:43 raspberrypi systemd[1]: [0;1;39m[/lib/systemd/system/redis-server.service:14] Unknown lvalue 'RunTimeDirectory' in section 'Service'[0m
+Dec 12 16:42:43 raspberrypi systemd[1]: apt-daily.timer: Adding 1h 40min 18.643372s random time.
+Dec 12 16:42:43 raspberrypi systemd[1]: apt-daily-upgrade.timer: Adding 24min 43.254654s random time.
+Dec 12 16:43:08 raspberrypi systemd[1]: Reloading.
+Dec 12 16:43:08 raspberrypi systemd[1]: [0;1;39m[/lib/systemd/system/redis-server.service:14] Unknown lvalue 'RunTimeDirectory' in section 'Service'[0m
+Dec 12 16:43:08 raspberrypi systemd[1]: apt-daily.timer: Adding 1h 48min 50.793350s random time.
+Dec 12 16:43:08 raspberrypi systemd[1]: apt-daily-upgrade.timer: Adding 58min 22.234133s random time.
+Dec 12 16:43:09 raspberrypi dbus[312]: [0;1;39m[system] Reloaded configuration[0m
+Dec 12 16:43:09 raspberrypi dbus[312]: [0;1;39m[system] Reloaded configuration[0m
+Dec 12 16:43:09 raspberrypi dbus[312]: [0;1;39m[system] Reloaded configuration[0m
+Dec 12 16:43:09 raspberrypi dbus[312]: [0;1;39m[system] Reloaded configuration[0m
+Dec 12 16:43:09 raspberrypi dbus[312]: [0;1;39m[system] Reloaded configuration[0m
+Dec 12 16:43:09 raspberrypi dbus[312]: [0;1;39m[system] Reloaded configuration[0m
+Dec 12 16:43:19 raspberrypi systemd[1]: Reloading.
+Dec 12 16:43:19 raspberrypi systemd[1]: [0;1;39m[/lib/systemd/system/redis-server.service:14] Unknown lvalue 'RunTimeDirectory' in section 'Service'[0m
+Dec 12 16:43:19 raspberrypi systemd[1]: apt-daily.timer: Adding 1h 58min 38.902606s random time.
+Dec 12 16:43:19 raspberrypi systemd[1]: apt-daily-upgrade.timer: Adding 45min 23.933027s random time.
+Dec 12 16:43:19 raspberrypi systemd[1]: Reloading.
+Dec 12 16:43:20 raspberrypi systemd[1]: [0;1;39m[/lib/systemd/system/redis-server.service:14] Unknown lvalue 'RunTimeDirectory' in section 'Service'[0m
+Dec 12 16:43:20 raspberrypi systemd[1]: apt-daily.timer: Adding 2h 48min 58.949966s random time.
+Dec 12 16:43:20 raspberrypi systemd[1]: apt-daily-upgrade.timer: Adding 39min 42.149499s random time.
+Dec 12 16:43:20 raspberrypi systemd[1]: Reloading.
+Dec 12 16:43:20 raspberrypi systemd[1]: [0;1;39m[/lib/systemd/system/redis-server.service:14] Unknown lvalue 'RunTimeDirectory' in section 'Service'[0m
+Dec 12 16:43:20 raspberrypi systemd[1]: apt-daily.timer: Adding 9h 22min 57.467424s random time.
+Dec 12 16:43:20 raspberrypi systemd[1]: apt-daily-upgrade.timer: Adding 30min 24.638578s random time.
+Dec 12 16:43:20 raspberrypi systemd[1]: Reloading.
+Dec 12 16:43:20 raspberrypi systemd[1]: [0;1;39m[/lib/systemd/system/redis-server.service:14] Unknown lvalue 'RunTimeDirectory' in section 'Service'[0m
+Dec 12 16:43:20 raspberrypi systemd[1]: apt-daily.timer: Adding 8h 52min 27.315764s random time.
+Dec 12 16:43:20 raspberrypi systemd[1]: apt-daily-upgrade.timer: Adding 7min 5.147987s random time.
+Dec 12 16:43:20 raspberrypi systemd[1]: Reloading.
+Dec 12 16:43:21 raspberrypi systemd[1]: [0;1;39m[/lib/systemd/system/redis-server.service:14] Unknown lvalue 'RunTimeDirectory' in section 'Service'[0m
+Dec 12 16:43:21 raspberrypi systemd[1]: apt-daily.timer: Adding 34min 51.559408s random time.
+Dec 12 16:43:21 raspberrypi systemd[1]: apt-daily-upgrade.timer: Adding 23min 29.493563s random time.
+Dec 12 16:43:21 raspberrypi systemd[1]: Reloading.
+Dec 12 16:43:21 raspberrypi systemd[1]: [0;1;39m[/lib/systemd/system/redis-server.service:14] Unknown lvalue 'RunTimeDirectory' in section 'Service'[0m
+Dec 12 16:43:21 raspberrypi systemd[1]: apt-daily.timer: Adding 7h 30min 8.942679s random time.
+Dec 12 16:43:21 raspberrypi systemd[1]: apt-daily-upgrade.timer: Adding 22min 38.767553s random time.
+Dec 12 16:43:21 raspberrypi systemd[1]: Reloading.
+Dec 12 16:43:21 raspberrypi systemd[1]: [0;1;39m[/lib/systemd/system/redis-server.service:14] Unknown lvalue 'RunTimeDirectory' in section 'Service'[0m
+Dec 12 16:43:21 raspberrypi systemd[1]: apt-daily.timer: Adding 5h 48min 24.962089s random time.
+Dec 12 16:43:21 raspberrypi systemd[1]: apt-daily-upgrade.timer: Adding 10min 49.797379s random time.
+Dec 12 16:43:21 raspberrypi systemd[1]: Reloading.
+Dec 12 16:43:22 raspberrypi systemd[1]: [0;1;39m[/lib/systemd/system/redis-server.service:14] Unknown lvalue 'RunTimeDirectory' in section 'Service'[0m
+Dec 12 16:43:22 raspberrypi systemd[1]: apt-daily.timer: Adding 42min 18.266794s random time.
+Dec 12 16:43:22 raspberrypi systemd[1]: apt-daily-upgrade.timer: Adding 13min 136.182ms random time.
+Dec 12 16:43:22 raspberrypi systemd[1]: Reloading.
+Dec 12 16:43:22 raspberrypi systemd[1]: [0;1;39m[/lib/systemd/system/redis-server.service:14] Unknown lvalue 'RunTimeDirectory' in section 'Service'[0m
+Dec 12 16:43:22 raspberrypi systemd[1]: apt-daily.timer: Adding 8h 19min 54.672551s random time.
+Dec 12 16:43:22 raspberrypi systemd[1]: apt-daily-upgrade.timer: Adding 29min 46.137901s random time.
+Dec 12 16:43:22 raspberrypi systemd[1]: Reloading.
+Dec 12 16:43:23 raspberrypi systemd[1]: [0;1;39m[/lib/systemd/system/redis-server.service:14] Unknown lvalue 'RunTimeDirectory' in section 'Service'[0m
+Dec 12 16:43:23 raspberrypi systemd[1]: apt-daily.timer: Adding 1h 35min 10.896011s random time.
+Dec 12 16:43:23 raspberrypi systemd[1]: apt-daily-upgrade.timer: Adding 15min 34.501304s random time.
+Dec 12 16:43:23 raspberrypi systemd[1]: Reloading.
+Dec 12 16:43:23 raspberrypi systemd[1]: [0;1;39m[/lib/systemd/system/redis-server.service:14] Unknown lvalue 'RunTimeDirectory' in section 'Service'[0m
+Dec 12 16:43:23 raspberrypi systemd[1]: apt-daily.timer: Adding 10h 22min 47.925974s random time.
+Dec 12 16:43:23 raspberrypi systemd[1]: apt-daily-upgrade.timer: Adding 52min 31.056895s random time.
+Dec 12 16:43:23 raspberrypi systemd[1]: Reloading.
+Dec 12 16:43:23 raspberrypi systemd[1]: [0;1;39m[/lib/systemd/system/redis-server.service:14] Unknown lvalue 'RunTimeDirectory' in section 'Service'[0m
+Dec 12 16:43:23 raspberrypi systemd[1]: apt-daily.timer: Adding 11h 46min 4.776125s random time.
+Dec 12 16:43:23 raspberrypi systemd[1]: apt-daily-upgrade.timer: Adding 53min 59.557985s random time.
+Dec 12 16:43:23 raspberrypi systemd[1]: Reloading.
+Dec 12 16:43:24 raspberrypi systemd[1]: [0;1;39m[/lib/systemd/system/redis-server.service:14] Unknown lvalue 'RunTimeDirectory' in section 'Service'[0m
+Dec 12 16:43:24 raspberrypi systemd[1]: apt-daily.timer: Adding 4h 4min 27.794676s random time.
+Dec 12 16:43:24 raspberrypi systemd[1]: apt-daily-upgrade.timer: Adding 56min 9.615234s random time.
+Dec 12 16:44:49 raspberrypi systemd[1]: Reloading.
+Dec 12 16:44:49 raspberrypi systemd[1]: [0;1;39m[/lib/systemd/system/redis-server.service:14] Unknown lvalue 'RunTimeDirectory' in section 'Service'[0m
+Dec 12 16:44:49 raspberrypi systemd[1]: apt-daily.timer: Adding 10h 27min 50.587838s random time.
+Dec 12 16:44:49 raspberrypi systemd[1]: apt-daily-upgrade.timer: Adding 39min 17.830123s random time.
+Dec 12 16:44:53 raspberrypi systemd[1]: Reloading.
+Dec 12 16:44:53 raspberrypi systemd[1]: [0;1;39m[/lib/systemd/system/redis-server.service:14] Unknown lvalue 'RunTimeDirectory' in section 'Service'[0m
+Dec 12 16:44:53 raspberrypi systemd[1]: apt-daily.timer: Adding 7h 14min 19.011689s random time.
+Dec 12 16:44:53 raspberrypi systemd[1]: apt-daily-upgrade.timer: Adding 48min 44.834984s random time.
+Dec 12 16:44:53 raspberrypi systemd[1]: Reloading.
+Dec 12 16:44:53 raspberrypi systemd[1]: [0;1;39m[/lib/systemd/system/redis-server.service:14] Unknown lvalue 'RunTimeDirectory' in section 'Service'[0m
+Dec 12 16:44:53 raspberrypi systemd[1]: apt-daily.timer: Adding 7h 4min 6.861731s random time.
+Dec 12 16:44:53 raspberrypi systemd[1]: apt-daily-upgrade.timer: Adding 58min 44.207237s random time.
+Dec 12 16:44:54 raspberrypi systemd[1]: Starting containerd container runtime...
+-- Subject: Unit containerd.service has begun start-up
+-- Defined-By: systemd
+-- Support: https://www.debian.org/support
+-- 
+-- Unit containerd.service has begun starting up.
+Dec 12 16:44:54 raspberrypi modprobe[31857]: modprobe: ERROR: ../libkmod/libkmod.c:586 kmod_search_moddep() could not open moddep file '/lib/modules/4.14.71-v7+/modules.dep.bin'
+Dec 12 16:44:54 raspberrypi modprobe[31857]: modprobe: FATAL: Module overlay not found in directory /lib/modules/4.14.71-v7+
+Dec 12 16:44:54 raspberrypi systemd[1]: [0;1;39mcontainerd.service: Control process exited, code=exited status=1[0m
+Dec 12 16:44:54 raspberrypi systemd[1]: [0;1;31mFailed to start containerd container runtime.[0m
+-- Subject: Unit containerd.service has failed
+-- Defined-By: systemd
+-- Support: https://www.debian.org/support
+-- 
+-- Unit containerd.service has failed.
+-- 
+-- The result is failed.
+Dec 12 16:44:54 raspberrypi systemd[1]: [0;1;39mcontainerd.service: Unit entered failed state.[0m
+Dec 12 16:44:54 raspberrypi systemd[1]: [0;1;39mcontainerd.service: Failed with result 'exit-code'.[0m
+Dec 12 16:45:09 raspberrypi systemd[1]: Reloading.
+Dec 12 16:45:09 raspberrypi systemd[1]: [0;1;39m[/lib/systemd/system/redis-server.service:14] Unknown lvalue 'RunTimeDirectory' in section 'Service'[0m
+Dec 12 16:45:10 raspberrypi systemd[1]: apt-daily.timer: Adding 6h 47min 19.934884s random time.
+Dec 12 16:45:10 raspberrypi systemd[1]: apt-daily-upgrade.timer: Adding 22min 53.028269s random time.
+Dec 12 16:45:17 raspberrypi systemd[1]: Reloading.
+Dec 12 16:45:17 raspberrypi systemd[1]: [0;1;39m[/lib/systemd/system/redis-server.service:14] Unknown lvalue 'RunTimeDirectory' in section 'Service'[0m
+Dec 12 16:45:17 raspberrypi systemd[1]: apt-daily.timer: Adding 5h 21min 20.831567s random time.
+Dec 12 16:45:17 raspberrypi systemd[1]: apt-daily-upgrade.timer: Adding 6min 3.895647s random time.
+Dec 12 16:46:07 raspberrypi systemd[1]: Reloading.
+Dec 12 16:46:07 raspberrypi systemd[1]: [0;1;39m[/lib/systemd/system/redis-server.service:14] Unknown lvalue 'RunTimeDirectory' in section 'Service'[0m
+Dec 12 16:46:07 raspberrypi systemd[1]: apt-daily.timer: Adding 10h 46min 26.124974s random time.
+Dec 12 16:46:07 raspberrypi systemd[1]: apt-daily-upgrade.timer: Adding 1min 57.884509s random time.
+Dec 12 16:46:26 raspberrypi dbus[312]: [0;1;39m[system] Reloaded configuration[0m
+Dec 12 16:46:27 raspberrypi systemd[1]: Reloading.
+Dec 12 16:46:28 raspberrypi systemd[1]: [0;1;39m[/lib/systemd/system/redis-server.service:14] Unknown lvalue 'RunTimeDirectory' in section 'Service'[0m
+Dec 12 16:46:28 raspberrypi systemd[1]: apt-daily.timer: Adding 10h 7min 41.941341s random time.
+Dec 12 16:46:28 raspberrypi systemd[1]: apt-daily-upgrade.timer: Adding 48min 27.077024s random time.
+Dec 12 16:46:28 raspberrypi systemd[1]: Starting containerd container runtime...
+-- Subject: Unit containerd.service has begun start-up
+-- Defined-By: systemd
+-- Support: https://www.debian.org/support
+-- 
+-- Unit containerd.service has begun starting up.
+Dec 12 16:46:28 raspberrypi systemd[1]: Starting Docker Application Container Engine...
+-- Subject: Unit docker.service has begun start-up
+-- Defined-By: systemd
+-- Support: https://www.debian.org/support
+-- 
+-- Unit docker.service has begun starting up.
+Dec 12 16:46:28 raspberrypi modprobe[2110]: modprobe: ERROR: ../libkmod/libkmod.c:586 kmod_search_moddep() could not open moddep file '/lib/modules/4.14.71-v7+/modules.dep.bin'
+Dec 12 16:46:28 raspberrypi modprobe[2110]: modprobe: FATAL: Module overlay not found in directory /lib/modules/4.14.71-v7+
+Dec 12 16:46:28 raspberrypi systemd[1]: [0;1;39mcontainerd.service: Control process exited, code=exited status=1[0m
+Dec 12 16:46:28 raspberrypi systemd[1]: [0;1;31mFailed to start containerd container runtime.[0m
+-- Subject: Unit containerd.service has failed
+-- Defined-By: systemd
+-- Support: https://www.debian.org/support
+-- 
+-- Unit containerd.service has failed.
+-- 
+-- The result is failed.
+Dec 12 16:46:28 raspberrypi systemd[1]: [0;1;39mDependency failed for Docker Application Container Engine.[0m
+-- Subject: Unit docker.service has failed
+-- Defined-By: systemd
+-- Support: https://www.debian.org/support
+-- 
+-- Unit docker.service has failed.
+-- 
+-- The result is dependency.
+Dec 12 16:46:28 raspberrypi systemd[1]: [0;1;39mdocker.service: Job docker.service/start failed with result 'dependency'.[0m
+Dec 12 16:46:28 raspberrypi systemd[1]: [0;1;39mcontainerd.service: Unit entered failed state.[0m
+Dec 12 16:46:28 raspberrypi systemd[1]: [0;1;39mcontainerd.service: Failed with result 'exit-code'.[0m
+Dec 12 16:46:28 raspberrypi systemd[1]: Stopped Docker Application Container Engine.
+-- Subject: Unit docker.service has finished shutting down
+-- Defined-By: systemd
+-- Support: https://www.debian.org/support
+-- 
+-- Unit docker.service has finished shutting down.
+Dec 12 16:46:30 raspberrypi dbus[312]: [0;1;39m[system] Reloaded configuration[0m
+Dec 12 16:46:30 raspberrypi systemd[1]: Reloading.
+Dec 12 16:46:30 raspberrypi systemd[1]: [0;1;39m[/lib/systemd/system/redis-server.service:14] Unknown lvalue 'RunTimeDirectory' in section 'Service'[0m
+Dec 12 16:46:30 raspberrypi systemd[1]: apt-daily.timer: Adding 3h 34min 2.866114s random time.
+Dec 12 16:46:30 raspberrypi systemd[1]: apt-daily-upgrade.timer: Adding 12min 2.401365s random time.
+Dec 12 16:46:31 raspberrypi systemd[1]: Reloading.
+Dec 12 16:46:31 raspberrypi systemd[1]: [0;1;39m[/lib/systemd/system/redis-server.service:14] Unknown lvalue 'RunTimeDirectory' in section 'Service'[0m
+Dec 12 16:46:31 raspberrypi systemd[1]: apt-daily.timer: Adding 9h 34min 48.824004s random time.
+Dec 12 16:46:31 raspberrypi systemd[1]: apt-daily-upgrade.timer: Adding 3min 31.287093s random time.
+Dec 12 16:46:31 raspberrypi systemd[1]: Stopping Authorization Manager...
+-- Subject: Unit polkit.service has begun shutting down
+-- Defined-By: systemd
+-- Support: https://www.debian.org/support
+-- 
+-- Unit polkit.service has begun shutting down.
+Dec 12 16:46:31 raspberrypi systemd[1]: Stopped Authorization Manager.
+-- Subject: Unit polkit.service has finished shutting down
+-- Defined-By: systemd
+-- Support: https://www.debian.org/support
+-- 
+-- Unit polkit.service has finished shutting down.
+Dec 12 16:46:31 raspberrypi systemd[1]: Starting Authorization Manager...
+-- Subject: Unit polkit.service has begun start-up
+-- Defined-By: systemd
+-- Support: https://www.debian.org/support
+-- 
+-- Unit polkit.service has begun starting up.
+Dec 12 16:46:31 raspberrypi polkitd[2180]: started daemon version 0.105 using authority implementation `local' version `0.105'
+Dec 12 16:46:31 raspberrypi systemd[1]: Started Authorization Manager.
+-- Subject: Unit polkit.service has finished start-up
+-- Defined-By: systemd
+-- Support: https://www.debian.org/support
+-- 
+-- Unit polkit.service has finished starting up.
+-- 
+-- The start-up result is done.
+Dec 12 16:46:31 raspberrypi polkitd(authority=local)[2180]: [0;1;39mRegistered Authentication Agent for unix-session:c1 (system bus name :1.13 [lxpolkit], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_GB.UTF-8)[0m
+Dec 12 16:46:36 raspberrypi sudo[29281]: pam_unix(sudo:session): session closed for user root
+Dec 12 16:50:32 raspberrypi sshd[28458]: Received disconnect from 192.168.50.157 port 36593:11: disconnected by user
+Dec 12 16:50:32 raspberrypi sshd[28458]: Disconnected from 192.168.50.157 port 36593
+Dec 12 16:50:32 raspberrypi sshd[28446]: pam_unix(sshd:session): session closed for user pi
+Dec 12 16:50:32 raspberrypi systemd-logind[319]: Removed session c15.
+-- Subject: Session c15 has been terminated
+-- Defined-By: systemd
+-- Support: https://www.debian.org/support
+-- Documentation: http://www.freedesktop.org/wiki/Software/systemd/multiseat
+-- 
+-- A session with the ID c15 has been terminated.
+Dec 12 17:17:01 raspberrypi CRON[3008]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 12 17:17:01 raspberrypi CRON[3012]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 12 17:17:01 raspberrypi CRON[3008]: pam_unix(cron:session): session closed for user root
+Dec 12 18:17:01 raspberrypi CRON[3974]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 12 18:17:01 raspberrypi CRON[3978]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 12 18:17:01 raspberrypi CRON[3974]: pam_unix(cron:session): session closed for user root
+Dec 12 18:53:09 raspberrypi sshd[4557]: Accepted password for pi from 192.168.50.157 port 59675 ssh2
+Dec 12 18:53:09 raspberrypi sshd[4557]: pam_unix(sshd:session): session opened for user pi by (uid=0)
+Dec 12 18:53:09 raspberrypi systemd[1]: Started Session c16 of user pi.
+-- Subject: Unit session-c16.scope has finished start-up
+-- Defined-By: systemd
+-- Support: https://www.debian.org/support
+-- 
+-- Unit session-c16.scope has finished starting up.
+-- 
+-- The start-up result is done.
+Dec 12 18:53:09 raspberrypi systemd-logind[319]: New session c16 of user pi.
+-- Subject: A new session c16 has been created for user pi
+-- Defined-By: systemd
+-- Support: https://www.debian.org/support
+-- Documentation: http://www.freedesktop.org/wiki/Software/systemd/multiseat
+-- 
+-- A new session with the ID c16 has been created for the user pi.
+-- 
+-- The leading process of the session is 4557.
+Dec 12 18:55:44 raspberrypi sudo[4778]: [0;1;39m      pi : TTY=pts/0 ; PWD=/home/pi/Starcraft2-Extension-Server ; USER=root ; COMMAND=/usr/local/bin/docker-compose up[0m
+Dec 12 18:55:44 raspberrypi sudo[4778]: pam_unix(sudo:session): session opened for user root by pi(uid=0)
+Dec 12 18:55:47 raspberrypi sudo[4778]: pam_unix(sudo:session): session closed for user root
+Dec 12 18:56:22 raspberrypi sudo[4798]: [0;1;39m      pi : TTY=pts/0 ; PWD=/home/pi/Starcraft2-Extension-Server ; USER=root ; COMMAND=/bin/systemctl start docker[0m
+Dec 12 18:56:22 raspberrypi sudo[4798]: pam_unix(sudo:session): session opened for user root by pi(uid=0)
+Dec 12 18:56:22 raspberrypi systemd[1]: Starting Docker Application Container Engine...
+-- Subject: Unit docker.service has begun start-up
+-- Defined-By: systemd
+-- Support: https://www.debian.org/support
+-- 
+-- Unit docker.service has begun starting up.
+Dec 12 18:56:22 raspberrypi systemd[1]: Starting containerd container runtime...
+-- Subject: Unit containerd.service has begun start-up
+-- Defined-By: systemd
+-- Support: https://www.debian.org/support
+-- 
+-- Unit containerd.service has begun starting up.
+Dec 12 18:56:22 raspberrypi modprobe[4805]: modprobe: ERROR: ../libkmod/libkmod.c:586 kmod_search_moddep() could not open moddep file '/lib/modules/4.14.71-v7+/modules.dep.bin'
+Dec 12 18:56:22 raspberrypi modprobe[4805]: modprobe: FATAL: Module overlay not found in directory /lib/modules/4.14.71-v7+
+Dec 12 18:56:22 raspberrypi systemd[1]: [0;1;39mcontainerd.service: Control process exited, code=exited status=1[0m
+Dec 12 18:56:22 raspberrypi systemd[1]: [0;1;31mFailed to start containerd container runtime.[0m
+-- Subject: Unit containerd.service has failed
+-- Defined-By: systemd
+-- Support: https://www.debian.org/support
+-- 
+-- Unit containerd.service has failed.
+-- 
+-- The result is failed.
+Dec 12 18:56:22 raspberrypi systemd[1]: [0;1;39mDependency failed for Docker Application Container Engine.[0m
+-- Subject: Unit docker.service has failed
+-- Defined-By: systemd
+-- Support: https://www.debian.org/support
+-- 
+-- Unit docker.service has failed.
+-- 
+-- The result is dependency.
+Dec 12 18:56:22 raspberrypi systemd[1]: [0;1;39mdocker.service: Job docker.service/start failed with result 'dependency'.[0m
+Dec 12 18:56:22 raspberrypi sudo[4798]: pam_unix(sudo:session): session closed for user root
+Dec 12 18:56:22 raspberrypi systemd[1]: [0;1;39mcontainerd.service: Unit entered failed state.[0m
+Dec 12 18:56:22 raspberrypi systemd[1]: [0;1;39mcontainerd.service: Failed with result 'exit-code'.[0m
+Dec 12 18:56:22 raspberrypi systemd[1]: Stopped Docker Application Container Engine.
+-- Subject: Unit docker.service has finished shutting down
+-- Defined-By: systemd
+-- Support: https://www.debian.org/support
+-- 
+-- Unit docker.service has finished shutting down.
+Dec 12 18:56:28 raspberrypi sudo[4814]: [0;1;39m      pi : TTY=pts/0 ; PWD=/home/pi/Starcraft2-Extension-Server ; USER=root ; COMMAND=/bin/systemctl stop docker[0m
+Dec 12 18:56:28 raspberrypi sudo[4814]: pam_unix(sudo:session): session opened for user root by pi(uid=0)
+Dec 12 18:56:28 raspberrypi sudo[4814]: pam_unix(sudo:session): session closed for user root
+Dec 12 18:56:31 raspberrypi sudo[4824]: [0;1;39m      pi : TTY=pts/0 ; PWD=/home/pi/Starcraft2-Extension-Server ; USER=root ; COMMAND=/bin/systemctl start docker[0m
+Dec 12 18:56:31 raspberrypi sudo[4824]: pam_unix(sudo:session): session opened for user root by pi(uid=0)
+Dec 12 18:56:31 raspberrypi systemd[1]: Starting containerd container runtime...
+-- Subject: Unit containerd.service has begun start-up
+-- Defined-By: systemd
+-- Support: https://www.debian.org/support
+-- 
+-- Unit containerd.service has begun starting up.
+Dec 12 18:56:31 raspberrypi systemd[1]: Starting Docker Application Container Engine...
+-- Subject: Unit docker.service has begun start-up
+-- Defined-By: systemd
+-- Support: https://www.debian.org/support
+-- 
+-- Unit docker.service has begun starting up.
+Dec 12 18:56:31 raspberrypi systemd[1]: [0;1;39mcontainerd.service: Control process exited, code=exited status=1[0m
+Dec 12 18:56:31 raspberrypi modprobe[4830]: modprobe: ERROR: ../libkmod/libkmod.c:586 kmod_search_moddep() could not open moddep file '/lib/modules/4.14.71-v7+/modules.dep.bin'
+Dec 12 18:56:31 raspberrypi modprobe[4830]: modprobe: FATAL: Module overlay not found in directory /lib/modules/4.14.71-v7+
+Dec 12 18:56:31 raspberrypi systemd[1]: [0;1;31mFailed to start containerd container runtime.[0m
+-- Subject: Unit containerd.service has failed
+-- Defined-By: systemd
+-- Support: https://www.debian.org/support
+-- 
+-- Unit containerd.service has failed.
+-- 
+-- The result is failed.
+Dec 12 18:56:31 raspberrypi systemd[1]: [0;1;39mDependency failed for Docker Application Container Engine.[0m
+-- Subject: Unit docker.service has failed
+-- Defined-By: systemd
+-- Support: https://www.debian.org/support
+-- 
+-- Unit docker.service has failed.
+-- 
+-- The result is dependency.
+Dec 12 18:56:31 raspberrypi sudo[4824]: pam_unix(sudo:session): session closed for user root
+Dec 12 18:56:31 raspberrypi systemd[1]: [0;1;39mdocker.service: Job docker.service/start failed with result 'dependency'.[0m
+Dec 12 18:56:31 raspberrypi systemd[1]: [0;1;39mcontainerd.service: Unit entered failed state.[0m
+Dec 12 18:56:31 raspberrypi systemd[1]: [0;1;39mcontainerd.service: Failed with result 'exit-code'.[0m
+Dec 12 18:56:31 raspberrypi systemd[1]: Stopped Docker Application Container Engine.
+-- Subject: Unit docker.service has finished shutting down
+-- Defined-By: systemd
+-- Support: https://www.debian.org/support
+-- 
+-- Unit docker.service has finished shutting down.
+Dec 12 18:56:32 raspberrypi sudo[4839]: [0;1;39m      pi : TTY=pts/0 ; PWD=/home/pi/Starcraft2-Extension-Server ; USER=root ; COMMAND=/bin/systemctl start docker[0m
+Dec 12 18:56:32 raspberrypi sudo[4839]: pam_unix(sudo:session): session opened for user root by pi(uid=0)
+Dec 12 18:56:32 raspberrypi systemd[1]: Starting containerd container runtime...
+-- Subject: Unit containerd.service has begun start-up
+-- Defined-By: systemd
+-- Support: https://www.debian.org/support
+-- 
+-- Unit containerd.service has begun starting up.
+Dec 12 18:56:32 raspberrypi systemd[1]: Starting Docker Application Container Engine...
+-- Subject: Unit docker.service has begun start-up
+-- Defined-By: systemd
+-- Support: https://www.debian.org/support
+-- 
+-- Unit docker.service has begun starting up.
+Dec 12 18:56:32 raspberrypi modprobe[4845]: modprobe: ERROR: ../libkmod/libkmod.c:586 kmod_search_moddep() could not open moddep file '/lib/modules/4.14.71-v7+/modules.dep.bin'
+Dec 12 18:56:32 raspberrypi modprobe[4845]: modprobe: FATAL: Module overlay not found in directory /lib/modules/4.14.71-v7+
+Dec 12 18:56:32 raspberrypi systemd[1]: [0;1;39mcontainerd.service: Control process exited, code=exited status=1[0m
+Dec 12 18:56:32 raspberrypi systemd[1]: [0;1;31mFailed to start containerd container runtime.[0m
+-- Subject: Unit containerd.service has failed
+-- Defined-By: systemd
+-- Support: https://www.debian.org/support
+-- 
+-- Unit containerd.service has failed.
+-- 
+-- The result is failed.
+Dec 12 18:56:32 raspberrypi systemd[1]: [0;1;39mDependency failed for Docker Application Container Engine.[0m
+-- Subject: Unit docker.service has failed
+-- Defined-By: systemd
+-- Support: https://www.debian.org/support
+-- 
+-- Unit docker.service has failed.
+-- 
+-- The result is dependency.
+Dec 12 18:56:32 raspberrypi systemd[1]: [0;1;39mdocker.service: Job docker.service/start failed with result 'dependency'.[0m
+Dec 12 18:56:32 raspberrypi sudo[4839]: pam_unix(sudo:session): session closed for user root
+Dec 12 18:56:32 raspberrypi systemd[1]: [0;1;39mcontainerd.service: Unit entered failed state.[0m
+Dec 12 18:56:32 raspberrypi systemd[1]: [0;1;39mcontainerd.service: Failed with result 'exit-code'.[0m
+Dec 12 18:56:32 raspberrypi systemd[1]: Stopped Docker Application Container Engine.
+-- Subject: Unit docker.service has finished shutting down
+-- Defined-By: systemd
+-- Support: https://www.debian.org/support
+-- 
+-- Unit docker.service has finished shutting down.
+Dec 12 18:57:00 raspberrypi sudo[4869]: [0;1;39m      pi : TTY=pts/0 ; PWD=/home/pi/Starcraft2-Extension-Server ; USER=root ; COMMAND=/bin/kill -9 4866[0m
+Dec 12 18:57:00 raspberrypi sudo[4869]: pam_unix(sudo:session): session opened for user root by pi(uid=0)
+Dec 12 18:57:00 raspberrypi sudo[4869]: pam_unix(sudo:session): session closed for user root
+Dec 12 18:57:04 raspberrypi sudo[4877]: [0;1;39m      pi : TTY=pts/0 ; PWD=/home/pi/Starcraft2-Extension-Server ; USER=root ; COMMAND=/bin/kill -9 4572[0m
+Dec 12 18:57:04 raspberrypi sudo[4877]: pam_unix(sudo:session): session opened for user root by pi(uid=0)
+Dec 12 18:57:04 raspberrypi sudo[4877]: pam_unix(sudo:session): session closed for user root
+Dec 12 18:57:04 raspberrypi sshd[4569]: Received disconnect from 192.168.50.157 port 59675:11: disconnected by user
+Dec 12 18:57:04 raspberrypi sshd[4569]: Disconnected from 192.168.50.157 port 59675
+Dec 12 18:57:04 raspberrypi sshd[4557]: pam_unix(sshd:session): session closed for user pi
+Dec 12 18:57:04 raspberrypi systemd-logind[319]: Removed session c16.
+-- Subject: Session c16 has been terminated
+-- Defined-By: systemd
+-- Support: https://www.debian.org/support
+-- Documentation: http://www.freedesktop.org/wiki/Software/systemd/multiseat
+-- 
+-- A session with the ID c16 has been terminated.
+Dec 12 18:57:09 raspberrypi sshd[4891]: [0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.50.157  user=pi[0m
+Dec 12 18:57:12 raspberrypi sshd[4891]: Failed password for pi from 192.168.50.157 port 60228 ssh2
+Dec 12 18:57:17 raspberrypi sshd[4891]: Failed password for pi from 192.168.50.157 port 60228 ssh2
+Dec 12 18:57:21 raspberrypi sshd[4891]: Accepted password for pi from 192.168.50.157 port 60228 ssh2
+Dec 12 18:57:21 raspberrypi sshd[4891]: pam_unix(sshd:session): session opened for user pi by (uid=0)
+Dec 12 18:57:21 raspberrypi systemd-logind[319]: New session c17 of user pi.
+-- Subject: A new session c17 has been created for user pi
+-- Defined-By: systemd
+-- Support: https://www.debian.org/support
+-- Documentation: http://www.freedesktop.org/wiki/Software/systemd/multiseat
+-- 
+-- A new session with the ID c17 has been created for the user pi.
+-- 
+-- The leading process of the session is 4891.
+Dec 12 18:57:21 raspberrypi systemd[1]: Started Session c17 of user pi.
+-- Subject: Unit session-c17.scope has finished start-up
+-- Defined-By: systemd
+-- Support: https://www.debian.org/support
+-- 
+-- Unit session-c17.scope has finished starting up.
+-- 
+-- The start-up result is done.
+Dec 12 18:57:30 raspberrypi sudo[4981]: [0;1;39m      pi : TTY=pts/0 ; PWD=/home/pi/Starcraft2-Extension-Server ; USER=root ; COMMAND=/bin/systemctl start docker[0m
+Dec 12 18:57:30 raspberrypi sudo[4981]: pam_unix(sudo:session): session opened for user root by pi(uid=0)
+Dec 12 18:57:30 raspberrypi systemd[1]: Starting Docker Application Container Engine...
+-- Subject: Unit docker.service has begun start-up
+-- Defined-By: systemd
+-- Support: https://www.debian.org/support
+-- 
+-- Unit docker.service has begun starting up.
+Dec 12 18:57:30 raspberrypi systemd[1]: Starting containerd container runtime...
+-- Subject: Unit containerd.service has begun start-up
+-- Defined-By: systemd
+-- Support: https://www.debian.org/support
+-- 
+-- Unit containerd.service has begun starting up.
+Dec 12 18:57:30 raspberrypi modprobe[4988]: modprobe: ERROR: ../libkmod/libkmod.c:586 kmod_search_moddep() could not open moddep file '/lib/modules/4.14.71-v7+/modules.dep.bin'
+Dec 12 18:57:30 raspberrypi modprobe[4988]: modprobe: FATAL: Module overlay not found in directory /lib/modules/4.14.71-v7+
+Dec 12 18:57:30 raspberrypi systemd[1]: [0;1;39mcontainerd.service: Control process exited, code=exited status=1[0m
+Dec 12 18:57:30 raspberrypi systemd[1]: [0;1;31mFailed to start containerd container runtime.[0m
+-- Subject: Unit containerd.service has failed
+-- Defined-By: systemd
+-- Support: https://www.debian.org/support
+-- 
+-- Unit containerd.service has failed.
+-- 
+-- The result is failed.
+Dec 12 18:57:30 raspberrypi systemd[1]: [0;1;39mDependency failed for Docker Application Container Engine.[0m
+-- Subject: Unit docker.service has failed
+-- Defined-By: systemd
+-- Support: https://www.debian.org/support
+-- 
+-- Unit docker.service has failed.
+-- 
+-- The result is dependency.
+Dec 12 18:57:30 raspberrypi systemd[1]: [0;1;39mdocker.service: Job docker.service/start failed with result 'dependency'.[0m
+Dec 12 18:57:30 raspberrypi sudo[4981]: pam_unix(sudo:session): session closed for user root
+Dec 12 18:57:30 raspberrypi systemd[1]: [0;1;39mcontainerd.service: Unit entered failed state.[0m
+Dec 12 18:57:30 raspberrypi systemd[1]: [0;1;39mcontainerd.service: Failed with result 'exit-code'.[0m
+Dec 12 18:57:30 raspberrypi systemd[1]: Stopped Docker Application Container Engine.
+-- Subject: Unit docker.service has finished shutting down
+-- Defined-By: systemd
+-- Support: https://www.debian.org/support
+-- 
+-- Unit docker.service has finished shutting down.
+Dec 12 18:58:33 raspberrypi sudo[5026]: [0;1;39m      pi : TTY=pts/0 ; PWD=/home/pi/Starcraft2-Extension-Server ; USER=root ; COMMAND=/usr/bin/docker[0m
+Dec 12 18:58:33 raspberrypi sudo[5026]: pam_unix(sudo:session): session opened for user root by pi(uid=0)
+Dec 12 18:58:33 raspberrypi sudo[5026]: pam_unix(sudo:session): session closed for user root
+Dec 12 18:58:53 raspberrypi sudo[5047]: [0;1;39m      pi : TTY=pts/0 ; PWD=/home/pi/Starcraft2-Extension-Server ; USER=root ; COMMAND=/usr/local/bin/docker-compose up[0m
+Dec 12 18:58:53 raspberrypi sudo[5047]: pam_unix(sudo:session): session opened for user root by pi(uid=0)
+Dec 12 18:58:55 raspberrypi sudo[5047]: pam_unix(sudo:session): session closed for user root
+Dec 12 18:59:45 raspberrypi sudo[5073]: [0;1;39m      pi : TTY=pts/0 ; PWD=/home/pi/Starcraft2-Extension-Server ; USER=root ; COMMAND=/usr/sbin/service docker start[0m
+Dec 12 18:59:45 raspberrypi sudo[5073]: pam_unix(sudo:session): session opened for user root by pi(uid=0)
+Dec 12 18:59:46 raspberrypi systemd[1]: Starting Docker Application Container Engine...
+-- Subject: Unit docker.service has begun start-up
+-- Defined-By: systemd
+-- Support: https://www.debian.org/support
+-- 
+-- Unit docker.service has begun starting up.
+Dec 12 18:59:46 raspberrypi systemd[1]: Starting containerd container runtime...
+-- Subject: Unit containerd.service has begun start-up
+-- Defined-By: systemd
+-- Support: https://www.debian.org/support
+-- 
+-- Unit containerd.service has begun starting up.
+Dec 12 18:59:46 raspberrypi systemd[1]: [0;1;39mcontainerd.service: Control process exited, code=exited status=1[0m
+Dec 12 18:59:46 raspberrypi modprobe[5103]: modprobe: ERROR: ../libkmod/libkmod.c:586 kmod_search_moddep() could not open moddep file '/lib/modules/4.14.71-v7+/modules.dep.bin'
+Dec 12 18:59:46 raspberrypi modprobe[5103]: modprobe: FATAL: Module overlay not found in directory /lib/modules/4.14.71-v7+
+Dec 12 18:59:46 raspberrypi systemd[1]: [0;1;31mFailed to start containerd container runtime.[0m
+-- Subject: Unit containerd.service has failed
+-- Defined-By: systemd
+-- Support: https://www.debian.org/support
+-- 
+-- Unit containerd.service has failed.
+-- 
+-- The result is failed.
+Dec 12 18:59:46 raspberrypi sudo[5073]: pam_unix(sudo:session): session closed for user root
+Dec 12 18:59:46 raspberrypi systemd[1]: [0;1;39mDependency failed for Docker Application Container Engine.[0m
+-- Subject: Unit docker.service has failed
+-- Defined-By: systemd
+-- Support: https://www.debian.org/support
+-- 
+-- Unit docker.service has failed.
+-- 
+-- The result is dependency.
+Dec 12 18:59:46 raspberrypi systemd[1]: [0;1;39mdocker.service: Job docker.service/start failed with result 'dependency'.[0m
+Dec 12 18:59:46 raspberrypi systemd[1]: [0;1;39mcontainerd.service: Unit entered failed state.[0m
+Dec 12 18:59:46 raspberrypi systemd[1]: [0;1;39mcontainerd.service: Failed with result 'exit-code'.[0m
+Dec 12 18:59:46 raspberrypi systemd[1]: Stopped Docker Application Container Engine.
+-- Subject: Unit docker.service has finished shutting down
+-- Defined-By: systemd
+-- Support: https://www.debian.org/support
+-- 
+-- Unit docker.service has finished shutting down.
+Dec 12 18:59:50 raspberrypi sudo[5110]: [0;1;39m      pi : TTY=pts/0 ; PWD=/home/pi/Starcraft2-Extension-Server ; USER=root ; COMMAND=/usr/sbin/service docker stop[0m
+Dec 12 18:59:50 raspberrypi sudo[5110]: pam_unix(sudo:session): session opened for user root by pi(uid=0)
+Dec 12 18:59:51 raspberrypi sudo[5110]: pam_unix(sudo:session): session closed for user root
+Dec 12 18:59:53 raspberrypi sudo[5143]: [0;1;39m      pi : TTY=pts/0 ; PWD=/home/pi/Starcraft2-Extension-Server ; USER=root ; COMMAND=/usr/sbin/service docker start[0m
+Dec 12 18:59:53 raspberrypi sudo[5143]: pam_unix(sudo:session): session opened for user root by pi(uid=0)
+Dec 12 18:59:54 raspberrypi systemd[1]: Starting Docker Application Container Engine...
+-- Subject: Unit docker.service has begun start-up
+-- Defined-By: systemd
+-- Support: https://www.debian.org/support
+-- 
+-- Unit docker.service has begun starting up.
+Dec 12 18:59:54 raspberrypi systemd[1]: Starting containerd container runtime...
+-- Subject: Unit containerd.service has begun start-up
+-- Defined-By: systemd
+-- Support: https://www.debian.org/support
+-- 
+-- Unit containerd.service has begun starting up.
+Dec 12 18:59:54 raspberrypi modprobe[5173]: modprobe: ERROR: ../libkmod/libkmod.c:586 kmod_search_moddep() could not open moddep file '/lib/modules/4.14.71-v7+/modules.dep.bin'
+Dec 12 18:59:54 raspberrypi modprobe[5173]: modprobe: FATAL: Module overlay not found in directory /lib/modules/4.14.71-v7+
+Dec 12 18:59:54 raspberrypi systemd[1]: [0;1;39mcontainerd.service: Control process exited, code=exited status=1[0m
+Dec 12 18:59:54 raspberrypi sudo[5143]: pam_unix(sudo:session): session closed for user root
+Dec 12 18:59:54 raspberrypi systemd[1]: [0;1;31mFailed to start containerd container runtime.[0m
+-- Subject: Unit containerd.service has failed
+-- Defined-By: systemd
+-- Support: https://www.debian.org/support
+-- 
+-- Unit containerd.service has failed.
+-- 
+-- The result is failed.
+Dec 12 18:59:54 raspberrypi systemd[1]: [0;1;39mDependency failed for Docker Application Container Engine.[0m
+-- Subject: Unit docker.service has failed
+-- Defined-By: systemd
+-- Support: https://www.debian.org/support
+-- 
+-- Unit docker.service has failed.
+-- 
+-- The result is dependency.
+Dec 12 18:59:54 raspberrypi systemd[1]: [0;1;39mdocker.service: Job docker.service/start failed with result 'dependency'.[0m
+Dec 12 18:59:54 raspberrypi systemd[1]: [0;1;39mcontainerd.service: Unit entered failed state.[0m
+Dec 12 18:59:54 raspberrypi systemd[1]: [0;1;39mcontainerd.service: Failed with result 'exit-code'.[0m
+Dec 12 18:59:54 raspberrypi systemd[1]: Stopped Docker Application Container Engine.
+-- Subject: Unit docker.service has finished shutting down
+-- Defined-By: systemd
+-- Support: https://www.debian.org/support
+-- 
+-- Unit docker.service has finished shutting down.
+Dec 12 19:00:01 raspberrypi sudo[5182]: [0;1;39m      pi : TTY=pts/0 ; PWD=/home/pi/Starcraft2-Extension-Server ; USER=root ; COMMAND=/bin/journalctl -xe[0m
+Dec 12 19:00:01 raspberrypi sudo[5182]: pam_unix(sudo:session): session opened for user root by pi(uid=0)

@@ -1,5 +1,6 @@
 require('dotenv').config();
 
+const https = require('https');
 const express = require('express');
 const path = require('path');
 const favicon = require('serve-favicon');
@@ -7,11 +8,23 @@ const helmet = require('helmet');
 const compression = require('compression');
 const responseTime = require('response-time');
 const logger = require('./config/winston');
+const fs = require('fs');
 
 const DatabaseManager = require('./config/DatabaseManager');
 const TwitchOauth = require('./helpers/twitch-oauth');
 const Blizzard = require('./helpers/blizzard');
 const Starcraft = require('./helpers/sc2');
+
+
+const privateKey = fs.readFileSync('/etc/letsencrypt/live/bewareofcat.asuscomm.com/privkey.pem', 'utf8');
+const certificate = fs.readFileSync('/etc/letsencrypt/live/bewareofcat.asuscomm.com/cert.pem', 'utf-8');
+const ca = fs.readFileSync('/etc/letsencrypt/live/bewareofcat.asuscomm.com/chain.pem', 'utf8');
+
+const credentials = {
+	key: privateKey,
+	cert: certificate,
+	ca: ca
+};
 
 const twitchOauth = new TwitchOauth();
 twitchOauth.init();
@@ -67,9 +80,8 @@ app.use((req, res, next) => {
   next();
 });
 
-app.listen(3000, () => {
-  console.log('Listening on port 3000');
-});
+
+const httpsServer = https.createServer(credentials, app).listen(3000);
 
 app.get('/api/status', (req, res) => {
   res.status(200).send({ msg: 'API is working' });
