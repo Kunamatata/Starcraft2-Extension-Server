@@ -7,6 +7,7 @@ services:
       - type: bind
         source: ./
         target: /usr/src/app
+      - /etc/letsencrypt:/etc/letsencrypt
     ports:
       - "3000:3000"
     environment:
@@ -14,7 +15,7 @@ services:
       - REDIS=redis
       - MONGO_URL=mongodb://mongodb/starcraft-twitch-db
   mongodb:
-    image: mongo:latest
+    image: andresvidal/rpi3-mongodb3:latest
     ports:
       - "27017:27017"
   redis:
