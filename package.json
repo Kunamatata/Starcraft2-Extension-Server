@@ -29,9 +29,5 @@
     "serve-favicon": "^2.5.0",
     "winston": "^3.2.1"
   },
-  "devDependencies": {
-    "eslint": "5.7.0",
-    "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-plugin-import": "^2.16.0"
-  }
+  "devDependencies": {}
 }

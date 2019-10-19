@@ -6,7 +6,8 @@ const { EventEmitter } = require('events');
 module.exports = class StarcraftTwitchAPI extends EventEmitter {
   constructor() {
     super();
-    this.starcraft2URL = 'https://api.twitch.tv/helix/streams?game_id=490422&first=100';
+    this.starcraft2URL =
+      'https://api.twitch.tv/helix/streams?game_id=490422&first=100';
     this.intervalMS = null;
     this.poolingMS = 20000;
     this.databaseManager = null;
@@ -33,26 +34,39 @@ module.exports = class StarcraftTwitchAPI extends EventEmitter {
 
   twitchSC2Worker() {
     fetch(this.starcraft2URL, {
-      headers: { 'Client-ID': process.env.TWITCH_CLIENT_ID },
-    }).then((response) => {
+      headers: { 'Client-ID': process.env.TWITCH_CLIENT_ID }
+    }).then(response => {
       if (response.status !== 200) {
         console.log(
-          `Looks like there was a problem. Status Code: ${response.status}`,
+          `Looks like there was a problem. Status Code: ${response.status}`
         );
         return;
       }
-      response.json().then((jsonData) => {
-        // console.log('updating database');
-        this.databaseManager.saveDocument(jsonData);
-        // Remove the old documents always keep the most recent
-        this.databaseManager.deleteDocuments(new Date());
+      response.json().then(jsonData => {
+        const userQuery = jsonData.data.map(stream => {
+          return `id=${stream.user_id}`;
+        });
+        fetch(`https://api.twitch.tv/helix/users?${userQuery.join(`&`)}`, {
+          headers: { 'Client-ID': process.env.TWITCH_CLIENT_ID }
+        }).then(res => {
+          res.json().then(userResult => {
+            const expandedStreams = jsonData.data.map((stream, index) => {
+              const { profile_image_url, description } = userResult.data[index];
+              return { ...stream, profile_image_url, description };
+            });
+            // console.log('updating database');
+            this.databaseManager.saveDocument({ data: expandedStreams });
+            // Remove the old documents always keep the most recent
+            this.databaseManager.deleteDocuments(new Date());
+          });
+        });
       });
     });
   }
 
   getTwitchData(req, res) {
     const { lang } = req.query;
-    return this.databaseManager.getDocuments('streams', lang).then((data) => {
+    return this.databaseManager.getDocuments('streams', lang).then(data => {
       res.json(data);
     });
   }
